@@ -10,11 +10,14 @@
 		179FB09D3BAD753102573302 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BAF4F444EFB7194B86462A /* libPods.a */; };
 		7216B75F1B0E41C50065B180 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7216B75E1B0E41C50065B180 /* main.m */; };
 		7216B7621B0E41C50065B180 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7216B7611B0E41C50065B180 /* AppDelegate.m */; };
-		7216B7651B0E41C50065B180 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7216B7641B0E41C50065B180 /* ViewController.m */; };
 		7216B7681B0E41C50065B180 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7216B7661B0E41C50065B180 /* Main.storyboard */; };
 		7216B76A1B0E41C50065B180 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7216B7691B0E41C50065B180 /* Images.xcassets */; };
 		7216B76D1B0E41C50065B180 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7216B76B1B0E41C50065B180 /* LaunchScreen.xib */; };
 		7216B7791B0E41C50065B180 /* HotelBATests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7216B7781B0E41C50065B180 /* HotelBATests.m */; };
+		725D49B41B0E48CF005D4AF9 /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 725D49B31B0E48CF005D4AF9 /* MenuTableViewController.m */; };
+		725D49B71B0E4B1E005D4AF9 /* CenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 725D49B61B0E4B1E005D4AF9 /* CenterViewController.m */; };
+		EE26693960916813EF83FE5A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266E231D686016B967FB13 /* ViewController.m */; };
+		EE266E1F5686AC408B46CA94 /* UIImage+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266828C010766946F36C7A /* UIImage+Helper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,15 +38,21 @@
 		7216B75E1B0E41C50065B180 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7216B7601B0E41C50065B180 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7216B7611B0E41C50065B180 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7216B7631B0E41C50065B180 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7216B7641B0E41C50065B180 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7216B7671B0E41C50065B180 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7216B7691B0E41C50065B180 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7216B76C1B0E41C50065B180 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		7216B7721B0E41C50065B180 /* HotelBATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HotelBATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7216B7771B0E41C50065B180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7216B7781B0E41C50065B180 /* HotelBATests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HotelBATests.m; sourceTree = "<group>"; };
+		725D49B21B0E48CF005D4AF9 /* MenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewController.h; sourceTree = "<group>"; };
+		725D49B31B0E48CF005D4AF9 /* MenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewController.m; sourceTree = "<group>"; };
+		725D49B51B0E4B1E005D4AF9 /* CenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenterViewController.h; sourceTree = "<group>"; };
+		725D49B61B0E4B1E005D4AF9 /* CenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenterViewController.m; sourceTree = "<group>"; };
 		D980AE08CB052A597CE12C7F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		EE266828C010766946F36C7A /* UIImage+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Helper.m"; sourceTree = "<group>"; };
+		EE266BBE581A74FBAAF4435D /* UIImage+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Helper.h"; sourceTree = "<group>"; };
+		EE266C8E36B715DC85A7D181 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EE266E231D686016B967FB13 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,12 +99,11 @@
 			children = (
 				7216B7601B0E41C50065B180 /* AppDelegate.h */,
 				7216B7611B0E41C50065B180 /* AppDelegate.m */,
-				7216B7631B0E41C50065B180 /* ViewController.h */,
-				7216B7641B0E41C50065B180 /* ViewController.m */,
 				7216B7661B0E41C50065B180 /* Main.storyboard */,
 				7216B7691B0E41C50065B180 /* Images.xcassets */,
 				7216B76B1B0E41C50065B180 /* LaunchScreen.xib */,
 				7216B75C1B0E41C50065B180 /* Supporting Files */,
+				EE266F5A61B68A1B9AF5E196 /* Sources */,
 			);
 			path = HotelBA;
 			sourceTree = "<group>";
@@ -141,6 +149,61 @@
 				36BAF4F444EFB7194B86462A /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE26622735D5B7024C46BC8A /* CenterViewController */ = {
+			isa = PBXGroup;
+			children = (
+				725D49B51B0E4B1E005D4AF9 /* CenterViewController.h */,
+				725D49B61B0E4B1E005D4AF9 /* CenterViewController.m */,
+			);
+			path = CenterViewController;
+			sourceTree = "<group>";
+		};
+		EE26647BFFC2135AAB6E6968 /* RootViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EE266C8E36B715DC85A7D181 /* ViewController.h */,
+				EE266E231D686016B967FB13 /* ViewController.m */,
+			);
+			path = RootViewController;
+			sourceTree = "<group>";
+		};
+		EE2666DB922EA04C763FC245 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EE266A4BC7460BCC5547C596 /* Categories */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		EE266A4BC7460BCC5547C596 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				EE266828C010766946F36C7A /* UIImage+Helper.m */,
+				EE266BBE581A74FBAAF4435D /* UIImage+Helper.h */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		EE266DEEF8459219BD1A03A5 /* MenuTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				725D49B21B0E48CF005D4AF9 /* MenuTableViewController.h */,
+				725D49B31B0E48CF005D4AF9 /* MenuTableViewController.m */,
+			);
+			path = MenuTableViewController;
+			sourceTree = "<group>";
+		};
+		EE266F5A61B68A1B9AF5E196 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EE26647BFFC2135AAB6E6968 /* RootViewController */,
+				EE266DEEF8459219BD1A03A5 /* MenuTableViewController */,
+				EE26622735D5B7024C46BC8A /* CenterViewController */,
+				EE2666DB922EA04C763FC245 /* Common */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,9 +341,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7216B7651B0E41C50065B180 /* ViewController.m in Sources */,
+				725D49B41B0E48CF005D4AF9 /* MenuTableViewController.m in Sources */,
 				7216B7621B0E41C50065B180 /* AppDelegate.m in Sources */,
 				7216B75F1B0E41C50065B180 /* main.m in Sources */,
+				EE26693960916813EF83FE5A /* ViewController.m in Sources */,
+				725D49B71B0E4B1E005D4AF9 /* CenterViewController.m in Sources */,
+				EE266E1F5686AC408B46CA94 /* UIImage+Helper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
