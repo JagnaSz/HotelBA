@@ -25,7 +25,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m9j-hH-YUA" userLabel="thin line">
-                    <rect key="frame" x="15" y="599" width="585" height="1"/>
+                    <rect key="frame" x="0.0" y="599" width="600" height="1"/>
                     <color key="backgroundColor" red="0.58823529411764708" green="0.63137254901960782" blue="0.69411764705882351" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="1" id="I9a-1y-Ld2"/>
@@ -34,7 +34,7 @@
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="m9j-hH-YUA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="367-9p-OWm"/>
+                <constraint firstItem="m9j-hH-YUA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="367-9p-OWm"/>
                 <constraint firstItem="6UF-Hx-0CT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="5aj-7A-gDR"/>
                 <constraint firstAttribute="trailing" secondItem="m9j-hH-YUA" secondAttribute="trailing" id="62b-du-3Ij"/>
                 <constraint firstItem="laI-dF-g1P" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="40" id="7U3-8z-2ed"/>
