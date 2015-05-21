@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		179FB09D3BAD753102573302 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BAF4F444EFB7194B86462A /* libPods.a */; };
 		7216B75F1B0E41C50065B180 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7216B75E1B0E41C50065B180 /* main.m */; };
 		7216B7621B0E41C50065B180 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7216B7611B0E41C50065B180 /* AppDelegate.m */; };
 		7216B7651B0E41C50065B180 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7216B7641B0E41C50065B180 /* ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		36BAF4F444EFB7194B86462A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		57E8810E092785E851A6CC3E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		7216B7591B0E41C50065B180 /* HotelBA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotelBA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7216B75D1B0E41C50065B180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7216B75E1B0E41C50065B180 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +43,7 @@
 		7216B7721B0E41C50065B180 /* HotelBATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HotelBATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7216B7771B0E41C50065B180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7216B7781B0E41C50065B180 /* HotelBATests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HotelBATests.m; sourceTree = "<group>"; };
+		D980AE08CB052A597CE12C7F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				179FB09D3BAD753102573302 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +71,8 @@
 				7216B75B1B0E41C50065B180 /* HotelBA */,
 				7216B7751B0E41C50065B180 /* HotelBATests */,
 				7216B75A1B0E41C50065B180 /* Products */,
+				B2A0C1F446A29F69135A1BF1 /* Pods */,
+				DB7B63EB872178B35D4891C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +126,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B2A0C1F446A29F69135A1BF1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57E8810E092785E851A6CC3E /* Pods.debug.xcconfig */,
+				D980AE08CB052A597CE12C7F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DB7B63EB872178B35D4891C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36BAF4F444EFB7194B86462A /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7216B77C1B0E41C50065B180 /* Build configuration list for PBXNativeTarget "HotelBA" */;
 			buildPhases = (
+				75124A811E5CEBC74E4FE096 /* Check Pods Manifest.lock */,
 				7216B7551B0E41C50065B180 /* Sources */,
 				7216B7561B0E41C50065B180 /* Frameworks */,
 				7216B7571B0E41C50065B180 /* Resources */,
+				449EEE20D6A6BF57CD82B285 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,6 +239,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		449EEE20D6A6BF57CD82B285 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75124A811E5CEBC74E4FE096 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7216B7551B0E41C50065B180 /* Sources */ = {
@@ -341,6 +400,7 @@
 		};
 		7216B77D1B0E41C50065B180 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57E8810E092785E851A6CC3E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HotelBA/Info.plist;
@@ -351,6 +411,7 @@
 		};
 		7216B77E1B0E41C50065B180 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D980AE08CB052A597CE12C7F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HotelBA/Info.plist;
@@ -412,6 +473,7 @@
 				7216B77E1B0E41C50065B180 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7216B77F1B0E41C50065B180 /* Build configuration list for PBXNativeTarget "HotelBATests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +482,7 @@
 				7216B7811B0E41C50065B180 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
