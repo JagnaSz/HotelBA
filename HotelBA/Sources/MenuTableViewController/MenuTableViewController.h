@@ -8,6 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
+@class MenuOptionModel;
+
+typedef NS_ENUM(NSInteger, MenuType) {
+    MenuTypeLogin,
+    MenuTypeAccount,
+    MenuTypeReservations,
+    MenuTypeAbout
+};
+
+@protocol MenuOptionsProtocol
+-(void) didSelectOptionWithModel:(MenuOptionModel *) model;
+@end;
+
 @interface MenuTableViewController : UITableViewController
 
 @end

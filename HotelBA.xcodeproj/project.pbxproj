@@ -16,8 +16,15 @@
 		7216B7791B0E41C50065B180 /* HotelBATests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7216B7781B0E41C50065B180 /* HotelBATests.m */; };
 		725D49B41B0E48CF005D4AF9 /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 725D49B31B0E48CF005D4AF9 /* MenuTableViewController.m */; };
 		725D49B71B0E4B1E005D4AF9 /* CenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 725D49B61B0E4B1E005D4AF9 /* CenterViewController.m */; };
+		725D49BA1B0E640C005D4AF9 /* ProfileHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 725D49B91B0E640C005D4AF9 /* ProfileHeader.m */; };
+		725D49BC1B0E641E005D4AF9 /* ProfileHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 725D49BB1B0E641E005D4AF9 /* ProfileHeader.xib */; };
+		725D49C01B0E76C6005D4AF9 /* MenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 725D49BE1B0E76C6005D4AF9 /* MenuTableViewCell.m */; };
+		725D49C11B0E76C6005D4AF9 /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 725D49BF1B0E76C6005D4AF9 /* MenuTableViewCell.xib */; };
+		EE26618792B5E733E050ADBB /* MenuTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE26600C0840B9CA0727617B /* MenuTableViewDelegate.m */; };
+		EE2664BF532601940B456E25 /* MenuOptionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2669E05589ACACE584D2B3 /* MenuOptionModel.m */; };
 		EE26693960916813EF83FE5A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266E231D686016B967FB13 /* ViewController.m */; };
 		EE266E1F5686AC408B46CA94 /* UIImage+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266828C010766946F36C7A /* UIImage+Helper.m */; };
+		EE266FAB174B7FBF05307FDA /* MenuTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = EE26684DA35CD791390B96C9 /* MenuTableDataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +55,20 @@
 		725D49B31B0E48CF005D4AF9 /* MenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewController.m; sourceTree = "<group>"; };
 		725D49B51B0E4B1E005D4AF9 /* CenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenterViewController.h; sourceTree = "<group>"; };
 		725D49B61B0E4B1E005D4AF9 /* CenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenterViewController.m; sourceTree = "<group>"; };
+		725D49B81B0E640C005D4AF9 /* ProfileHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileHeader.h; sourceTree = "<group>"; };
+		725D49B91B0E640C005D4AF9 /* ProfileHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileHeader.m; sourceTree = "<group>"; };
+		725D49BB1B0E641E005D4AF9 /* ProfileHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileHeader.xib; sourceTree = "<group>"; };
+		725D49BD1B0E76C6005D4AF9 /* MenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewCell.h; sourceTree = "<group>"; };
+		725D49BE1B0E76C6005D4AF9 /* MenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewCell.m; sourceTree = "<group>"; };
+		725D49BF1B0E76C6005D4AF9 /* MenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
 		D980AE08CB052A597CE12C7F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		EE26600C0840B9CA0727617B /* MenuTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewDelegate.m; sourceTree = "<group>"; };
+		EE2660692EA5937EAB37011A /* MenuOptionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuOptionModel.h; sourceTree = "<group>"; };
+		EE266601EEEC4762941CBDBB /* MenuTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewDelegate.h; sourceTree = "<group>"; };
+		EE2667D2FE4CECCCB16E1A88 /* MenuTableDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableDataSource.h; sourceTree = "<group>"; };
 		EE266828C010766946F36C7A /* UIImage+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Helper.m"; sourceTree = "<group>"; };
+		EE26684DA35CD791390B96C9 /* MenuTableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableDataSource.m; sourceTree = "<group>"; };
+		EE2669E05589ACACE584D2B3 /* MenuOptionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuOptionModel.m; sourceTree = "<group>"; };
 		EE266BBE581A74FBAAF4435D /* UIImage+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Helper.h"; sourceTree = "<group>"; };
 		EE266C8E36B715DC85A7D181 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		EE266E231D686016B967FB13 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -151,6 +170,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EE2660D4619237CD6CE64F46 /* MenuTableDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				EE26684DA35CD791390B96C9 /* MenuTableDataSource.m */,
+				EE2667D2FE4CECCCB16E1A88 /* MenuTableDataSource.h */,
+			);
+			path = MenuTableDataSource;
+			sourceTree = "<group>";
+		};
+		EE266134FD95611FE867C669 /* ProfileHeader */ = {
+			isa = PBXGroup;
+			children = (
+				725D49B81B0E640C005D4AF9 /* ProfileHeader.h */,
+				725D49B91B0E640C005D4AF9 /* ProfileHeader.m */,
+				725D49BB1B0E641E005D4AF9 /* ProfileHeader.xib */,
+			);
+			path = ProfileHeader;
+			sourceTree = "<group>";
+		};
 		EE26622735D5B7024C46BC8A /* CenterViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +215,15 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		EE2669BAF63A942E391AF327 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EE266F9F924F57171E36F53C /* Headers */,
+				EE266AB42B6EA640DF791968 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		EE266A4BC7460BCC5547C596 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,11 +233,43 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
+		EE266A787273791D7ABD8715 /* MenuTableDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				EE26600C0840B9CA0727617B /* MenuTableViewDelegate.m */,
+				EE266601EEEC4762941CBDBB /* MenuTableViewDelegate.h */,
+			);
+			path = MenuTableDelegate;
+			sourceTree = "<group>";
+		};
+		EE266AB42B6EA640DF791968 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				725D49BD1B0E76C6005D4AF9 /* MenuTableViewCell.h */,
+				725D49BE1B0E76C6005D4AF9 /* MenuTableViewCell.m */,
+				725D49BF1B0E76C6005D4AF9 /* MenuTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EE266CA33D3BA82E6042A9FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE2669E05589ACACE584D2B3 /* MenuOptionModel.m */,
+				EE2660692EA5937EAB37011A /* MenuOptionModel.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		EE266DEEF8459219BD1A03A5 /* MenuTableViewController */ = {
 			isa = PBXGroup;
 			children = (
 				725D49B21B0E48CF005D4AF9 /* MenuTableViewController.h */,
 				725D49B31B0E48CF005D4AF9 /* MenuTableViewController.m */,
+				EE2669BAF63A942E391AF327 /* View */,
+				EE2660D4619237CD6CE64F46 /* MenuTableDataSource */,
+				EE266CA33D3BA82E6042A9FE /* Model */,
+				EE266A787273791D7ABD8715 /* MenuTableDelegate */,
 			);
 			path = MenuTableViewController;
 			sourceTree = "<group>";
@@ -204,6 +283,14 @@
 				EE2666DB922EA04C763FC245 /* Common */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		EE266F9F924F57171E36F53C /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				EE266134FD95611FE867C669 /* ProfileHeader */,
+			);
+			path = Headers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,8 +375,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				725D49BC1B0E641E005D4AF9 /* ProfileHeader.xib in Resources */,
 				7216B7681B0E41C50065B180 /* Main.storyboard in Resources */,
 				7216B76D1B0E41C50065B180 /* LaunchScreen.xib in Resources */,
+				725D49C11B0E76C6005D4AF9 /* MenuTableViewCell.xib in Resources */,
 				7216B76A1B0E41C50065B180 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,10 +432,15 @@
 			files = (
 				725D49B41B0E48CF005D4AF9 /* MenuTableViewController.m in Sources */,
 				7216B7621B0E41C50065B180 /* AppDelegate.m in Sources */,
+				725D49C01B0E76C6005D4AF9 /* MenuTableViewCell.m in Sources */,
 				7216B75F1B0E41C50065B180 /* main.m in Sources */,
 				EE26693960916813EF83FE5A /* ViewController.m in Sources */,
 				725D49B71B0E4B1E005D4AF9 /* CenterViewController.m in Sources */,
+				725D49BA1B0E640C005D4AF9 /* ProfileHeader.m in Sources */,
 				EE266E1F5686AC408B46CA94 /* UIImage+Helper.m in Sources */,
+				EE266FAB174B7FBF05307FDA /* MenuTableDataSource.m in Sources */,
+				EE2664BF532601940B456E25 /* MenuOptionModel.m in Sources */,
+				EE26618792B5E733E050ADBB /* MenuTableViewDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
