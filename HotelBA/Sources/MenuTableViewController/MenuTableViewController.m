@@ -6,17 +6,20 @@
 //  Copyright (c) 2015 AgnieszkaSzczurek. All rights reserved.
 //
 
+#import <REFrostedViewController/REFrostedViewController.h>
 #import "MenuTableViewController.h"
 #import "ProfileHeader.h"
 #import "MenuTableDataSource.h"
 #import "MenuTableViewCell.h"
 #import "MenuTableViewDelegate.h"
 #import "MenuOptionModel.h"
+#import "TrunkViewController.h"
+#import "HotelNavigationController.h"
 
 @interface MenuTableViewController () <MenuOptionsProtocol>
 
 @property (nonatomic, strong) MenuTableDataSource *menuDataSource;
-
+@property (nonatomic, strong) HotelNavigationController *hotelNavigationController;
 @property(nonatomic, strong) MenuTableViewDelegate *menuDelegate;
 @end
 
@@ -26,6 +29,8 @@
     [super viewDidLoad];
 
     [self setupTableView];
+
+    self.hotelNavigationController = [self.storyboard instantiateViewControllerWithIdentifier:@"centerController"];
 
 }
 
@@ -51,6 +56,43 @@
 
 - (void)didSelectOptionWithModel:(MenuOptionModel *)model {
 
+    switch(model.type) {
+        case MenuTypeLogin:
+            [self createTrunkScreen];
+            break;
+        case MenuTypeAccount:
+            [self createAccountScreen];
+            break;
+        case MenuTypeReservations:
+            [self createReservationsScreen];
+            break;
+        case MenuTypeAbout:
+            [self createAboutScreen];
+            break;
+        default:
+            NSLog(@"Nieznana komenda");
+            break;
+    }
+
+}
+
+- (void)createAboutScreen {
+
+}
+
+- (void)createReservationsScreen {
+
+}
+
+- (void)createAccountScreen {
+
+}
+
+- (void)createTrunkScreen {
+    TrunkViewController *trunk = [self.storyboard instantiateViewControllerWithIdentifier:@"trunkScreen"];
+    self.hotelNavigationController.viewControllers = @[trunk];
+    self.frostedViewController.contentViewController = self.hotelNavigationController;
+    [self.frostedViewController hideMenuViewController];
 }
 
 

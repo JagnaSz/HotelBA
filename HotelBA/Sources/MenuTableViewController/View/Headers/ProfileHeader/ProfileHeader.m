@@ -28,6 +28,7 @@ NSString *const ProfileHeaderIdentifier = @"profileHeader";
 }
 - (void)setupView {
 
+    self.profileImage.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
     self.profileImage.layer.masksToBounds = YES;
     self.profileImage.layer.cornerRadius = 50.0;
     self.profileImage.layer.borderColor = [UIColor whiteColor].CGColor;

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		179FB09D3BAD753102573302 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BAF4F444EFB7194B86462A /* libPods.a */; };
+		7202998E1B0F324700902B43 /* TrunkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7202998D1B0F324700902B43 /* TrunkViewController.m */; };
 		7216B75F1B0E41C50065B180 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7216B75E1B0E41C50065B180 /* main.m */; };
 		7216B7621B0E41C50065B180 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7216B7611B0E41C50065B180 /* AppDelegate.m */; };
 		7216B7681B0E41C50065B180 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7216B7661B0E41C50065B180 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 		725D49C01B0E76C6005D4AF9 /* MenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 725D49BE1B0E76C6005D4AF9 /* MenuTableViewCell.m */; };
 		725D49C11B0E76C6005D4AF9 /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 725D49BF1B0E76C6005D4AF9 /* MenuTableViewCell.xib */; };
 		EE26618792B5E733E050ADBB /* MenuTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE26600C0840B9CA0727617B /* MenuTableViewDelegate.m */; };
+		EE26623887872FC6CE807C34 /* HotelNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266470CF485B804E48879D /* HotelNavigationController.m */; };
 		EE2664BF532601940B456E25 /* MenuOptionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2669E05589ACACE584D2B3 /* MenuOptionModel.m */; };
 		EE26693960916813EF83FE5A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266E231D686016B967FB13 /* ViewController.m */; };
 		EE266E1F5686AC408B46CA94 /* UIImage+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266828C010766946F36C7A /* UIImage+Helper.m */; };
@@ -40,6 +42,8 @@
 /* Begin PBXFileReference section */
 		36BAF4F444EFB7194B86462A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		57E8810E092785E851A6CC3E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		7202998C1B0F324700902B43 /* TrunkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrunkViewController.h; sourceTree = "<group>"; };
+		7202998D1B0F324700902B43 /* TrunkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrunkViewController.m; sourceTree = "<group>"; };
 		7216B7591B0E41C50065B180 /* HotelBA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotelBA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7216B75D1B0E41C50065B180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7216B75E1B0E41C50065B180 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -64,6 +68,7 @@
 		D980AE08CB052A597CE12C7F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		EE26600C0840B9CA0727617B /* MenuTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewDelegate.m; sourceTree = "<group>"; };
 		EE2660692EA5937EAB37011A /* MenuOptionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuOptionModel.h; sourceTree = "<group>"; };
+		EE266470CF485B804E48879D /* HotelNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelNavigationController.m; sourceTree = "<group>"; };
 		EE266601EEEC4762941CBDBB /* MenuTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewDelegate.h; sourceTree = "<group>"; };
 		EE2667D2FE4CECCCB16E1A88 /* MenuTableDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableDataSource.h; sourceTree = "<group>"; };
 		EE266828C010766946F36C7A /* UIImage+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Helper.m"; sourceTree = "<group>"; };
@@ -71,6 +76,7 @@
 		EE2669E05589ACACE584D2B3 /* MenuOptionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuOptionModel.m; sourceTree = "<group>"; };
 		EE266BBE581A74FBAAF4435D /* UIImage+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Helper.h"; sourceTree = "<group>"; };
 		EE266C8E36B715DC85A7D181 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EE266CB837BF00F86AB2D9ED /* HotelNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelNavigationController.h; sourceTree = "<group>"; };
 		EE266E231D686016B967FB13 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -207,12 +213,30 @@
 			path = RootViewController;
 			sourceTree = "<group>";
 		};
+		EE266588519FDB04C777405F /* TrunkViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7202998C1B0F324700902B43 /* TrunkViewController.h */,
+				7202998D1B0F324700902B43 /* TrunkViewController.m */,
+			);
+			path = TrunkViewController;
+			sourceTree = "<group>";
+		};
 		EE2666DB922EA04C763FC245 /* Common */ = {
 			isa = PBXGroup;
 			children = (
 				EE266A4BC7460BCC5547C596 /* Categories */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		EE26693B6818A50841E85B1D /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				EE266CB837BF00F86AB2D9ED /* HotelNavigationController.h */,
+				EE266470CF485B804E48879D /* HotelNavigationController.m */,
+			);
+			path = NavigationController;
 			sourceTree = "<group>";
 		};
 		EE2669BAF63A942E391AF327 /* View */ = {
@@ -281,6 +305,8 @@
 				EE266DEEF8459219BD1A03A5 /* MenuTableViewController */,
 				EE26622735D5B7024C46BC8A /* CenterViewController */,
 				EE2666DB922EA04C763FC245 /* Common */,
+				EE266588519FDB04C777405F /* TrunkViewController */,
+				EE26693B6818A50841E85B1D /* NavigationController */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -433,6 +459,7 @@
 				725D49B41B0E48CF005D4AF9 /* MenuTableViewController.m in Sources */,
 				7216B7621B0E41C50065B180 /* AppDelegate.m in Sources */,
 				725D49C01B0E76C6005D4AF9 /* MenuTableViewCell.m in Sources */,
+				7202998E1B0F324700902B43 /* TrunkViewController.m in Sources */,
 				7216B75F1B0E41C50065B180 /* main.m in Sources */,
 				EE26693960916813EF83FE5A /* ViewController.m in Sources */,
 				725D49B71B0E4B1E005D4AF9 /* CenterViewController.m in Sources */,
@@ -441,6 +468,7 @@
 				EE266FAB174B7FBF05307FDA /* MenuTableDataSource.m in Sources */,
 				EE2664BF532601940B456E25 /* MenuOptionModel.m in Sources */,
 				EE26618792B5E733E050ADBB /* MenuTableViewDelegate.m in Sources */,
+				EE26623887872FC6CE807C34 /* HotelNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

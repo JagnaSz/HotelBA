@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @class MenuOptionModel;
+@class REFrostedViewController;
 
 typedef NS_ENUM(NSInteger, MenuType) {
     MenuTypeLogin,

@@ -41,5 +41,10 @@
     return 200;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    MenuOptionModel *model = self.items[(NSUInteger) indexPath.row];
+    [self.optionsDelegate didSelectOptionWithModel:model];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
 
 @end
