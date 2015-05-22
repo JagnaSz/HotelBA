@@ -8,6 +8,7 @@
 
 #import "TrunkViewController.h"
 #import "UIImage+Helper.h"
+#import "RegisterViewController.h"
 #import <REFrostedViewController/REFrostedViewController.h>
 
 @interface TrunkViewController ()
@@ -26,9 +27,17 @@
     [self setupBindEvents];
 }
 
+
 - (void)setupBindEvents {
 
     [self.menuButton addTarget:self action:@selector(eventMenuButtonPressed:) forControlEvents: UIControlEventTouchUpInside];
+    [self.registerButton addTarget:self action:@selector(eventRegisterButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)eventRegisterButtonPressed:(id)eventRegisterButtonPressed {
+
+    RegisterViewController *registerViewController = [[RegisterViewController alloc] init];
+    [self.navigationController pushViewController:registerViewController animated:YES];
 
 }
 
@@ -57,6 +66,14 @@
 - (void)setupButtons {
     [self.loginButton setBackgroundColor:[UIColor whiteColor]];
     [self.registerButton setBackgroundColor:[UIColor whiteColor]];
+
+    self.loginButton.layer.cornerRadius = 10.f;
+    self.loginButton.layer.borderWidth = 2.f;
+    self.loginButton.layer.borderColor = [UIColor blackColor].CGColor;
+
+    self.registerButton.layer.cornerRadius = 10.f;
+    self.registerButton.layer.borderWidth = 2.f;
+    self.registerButton.layer.borderColor = [UIColor blackColor].CGColor;
 }
 
 

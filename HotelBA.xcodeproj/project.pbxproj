@@ -22,9 +22,11 @@
 		725D49C01B0E76C6005D4AF9 /* MenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 725D49BE1B0E76C6005D4AF9 /* MenuTableViewCell.m */; };
 		725D49C11B0E76C6005D4AF9 /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 725D49BF1B0E76C6005D4AF9 /* MenuTableViewCell.xib */; };
 		EE26618792B5E733E050ADBB /* MenuTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE26600C0840B9CA0727617B /* MenuTableViewDelegate.m */; };
+		EE2661E6EAF395BE41A30ACE /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266AE72EAC4D37BE310576 /* RegisterViewController.m */; };
 		EE26623887872FC6CE807C34 /* HotelNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266470CF485B804E48879D /* HotelNavigationController.m */; };
 		EE2664BF532601940B456E25 /* MenuOptionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2669E05589ACACE584D2B3 /* MenuOptionModel.m */; };
 		EE26693960916813EF83FE5A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266E231D686016B967FB13 /* ViewController.m */; };
+		EE2669E02778B8EF3C41D830 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE2660226347245639B434F8 /* RegisterViewController.xib */; };
 		EE266E1F5686AC408B46CA94 /* UIImage+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266828C010766946F36C7A /* UIImage+Helper.m */; };
 		EE266FAB174B7FBF05307FDA /* MenuTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = EE26684DA35CD791390B96C9 /* MenuTableDataSource.m */; };
 /* End PBXBuildFile section */
@@ -67,13 +69,16 @@
 		725D49BF1B0E76C6005D4AF9 /* MenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
 		D980AE08CB052A597CE12C7F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		EE26600C0840B9CA0727617B /* MenuTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewDelegate.m; sourceTree = "<group>"; };
+		EE2660226347245639B434F8 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		EE2660692EA5937EAB37011A /* MenuOptionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuOptionModel.h; sourceTree = "<group>"; };
 		EE266470CF485B804E48879D /* HotelNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelNavigationController.m; sourceTree = "<group>"; };
+		EE2665A5FDA4B2299F017A8E /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		EE266601EEEC4762941CBDBB /* MenuTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewDelegate.h; sourceTree = "<group>"; };
 		EE2667D2FE4CECCCB16E1A88 /* MenuTableDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableDataSource.h; sourceTree = "<group>"; };
 		EE266828C010766946F36C7A /* UIImage+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Helper.m"; sourceTree = "<group>"; };
 		EE26684DA35CD791390B96C9 /* MenuTableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableDataSource.m; sourceTree = "<group>"; };
 		EE2669E05589ACACE584D2B3 /* MenuOptionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuOptionModel.m; sourceTree = "<group>"; };
+		EE266AE72EAC4D37BE310576 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		EE266BBE581A74FBAAF4435D /* UIImage+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Helper.h"; sourceTree = "<group>"; };
 		EE266C8E36B715DC85A7D181 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		EE266CB837BF00F86AB2D9ED /* HotelNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelNavigationController.h; sourceTree = "<group>"; };
@@ -298,6 +303,16 @@
 			path = MenuTableViewController;
 			sourceTree = "<group>";
 		};
+		EE266EBF4248A579D627730A /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				EE2660226347245639B434F8 /* RegisterViewController.xib */,
+				EE2665A5FDA4B2299F017A8E /* RegisterViewController.h */,
+				EE266AE72EAC4D37BE310576 /* RegisterViewController.m */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
 		EE266F5A61B68A1B9AF5E196 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -307,6 +322,7 @@
 				EE2666DB922EA04C763FC245 /* Common */,
 				EE266588519FDB04C777405F /* TrunkViewController */,
 				EE26693B6818A50841E85B1D /* NavigationController */,
+				EE266EBF4248A579D627730A /* Register */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -406,6 +422,7 @@
 				7216B76D1B0E41C50065B180 /* LaunchScreen.xib in Resources */,
 				725D49C11B0E76C6005D4AF9 /* MenuTableViewCell.xib in Resources */,
 				7216B76A1B0E41C50065B180 /* Images.xcassets in Resources */,
+				EE2669E02778B8EF3C41D830 /* RegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +486,7 @@
 				EE2664BF532601940B456E25 /* MenuOptionModel.m in Sources */,
 				EE26618792B5E733E050ADBB /* MenuTableViewDelegate.m in Sources */,
 				EE26623887872FC6CE807C34 /* HotelNavigationController.m in Sources */,
+				EE2661E6EAF395BE41A30ACE /* RegisterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
