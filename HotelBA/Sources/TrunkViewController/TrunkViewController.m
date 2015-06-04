@@ -9,6 +9,7 @@
 #import "TrunkViewController.h"
 #import "UIImage+Helper.h"
 #import "RegisterViewController.h"
+#import "LoginViewController.h"
 #import <REFrostedViewController/REFrostedViewController.h>
 
 @interface TrunkViewController ()
@@ -32,6 +33,14 @@
 
     [self.menuButton addTarget:self action:@selector(eventMenuButtonPressed:) forControlEvents: UIControlEventTouchUpInside];
     [self.registerButton addTarget:self action:@selector(eventRegisterButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [self.loginButton addTarget:self action:@selector(eventLoginButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)eventLoginButtonPressed:(id)eventLoginButtonPressed {
+
+    LoginViewController *loginViewController = [[LoginViewController alloc] init];
+    [self.navigationController pushViewController:loginViewController animated:YES];
+
 }
 
 - (void)eventRegisterButtonPressed:(id)eventRegisterButtonPressed {

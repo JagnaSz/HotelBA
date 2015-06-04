@@ -162,7 +162,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pNI-eX-43a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="983" y="1600"/>
+            <point key="canvasLocation" x="803" y="1581"/>
         </scene>
         <!--Hotel Navigation Controller-->
         <scene sceneID="Ecm-ip-kS3">

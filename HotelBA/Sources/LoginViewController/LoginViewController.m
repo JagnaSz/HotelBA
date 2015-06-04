@@ -1,23 +1,21 @@
 //
-//  RegisterViewController.m
+//  LoginViewController.m
 //  HotelBA
 //
-//  Created by Agnieszka Szczurek on 22.05.2015.
+//  Created by Agnieszka Szczurek on 04.06.2015.
 //  Copyright (c) 2015 AgnieszkaSzczurek. All rights reserved.
 //
 
-#import "RegisterViewController.h"
-#import <REFrostedViewController/REFrostedViewController.h>
+#import "LoginViewController.h"
 
-@interface RegisterViewController ()
+@interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
-@property (weak, nonatomic) IBOutlet UITextField *confirmPasswordTextField;
-@property (weak, nonatomic) IBOutlet UIButton *registerButton;
+@property (weak, nonatomic) IBOutlet UIButton *loginButton;
 
 @end
 
-@implementation RegisterViewController
+@implementation LoginViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
