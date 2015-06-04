@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RegistrationRequest.h"
 
-@interface RegisterViewController : UIViewController
+@interface RegisterViewController : UIViewController <RegistrationDelegate>
 
 @end
