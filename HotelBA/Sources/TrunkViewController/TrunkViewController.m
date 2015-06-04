@@ -7,13 +7,10 @@
 //
 
 #import "TrunkViewController.h"
-#import "UIImage+Helper.h"
 #import "RegisterViewController.h"
 #import "LoginViewController.h"
-#import <REFrostedViewController/REFrostedViewController.h>
 
 @interface TrunkViewController ()
-@property (weak, nonatomic) IBOutlet UIButton *menuButton;
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
 @property (weak, nonatomic) IBOutlet UIButton *registerButton;
 
@@ -23,15 +20,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setupMenuButton];
     [self setupButtons];
-    [self setupBindEvents];
+    [self bindEvents];
 }
 
 
-- (void)setupBindEvents {
-
-    [self.menuButton addTarget:self action:@selector(eventMenuButtonPressed:) forControlEvents: UIControlEventTouchUpInside];
+- (void)bindEvents {
+    [super bindEvents];
     [self.registerButton addTarget:self action:@selector(eventRegisterButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self.loginButton addTarget:self action:@selector(eventLoginButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
 }
@@ -47,28 +42,6 @@
 
     RegisterViewController *registerViewController = [[RegisterViewController alloc] init];
     [self.navigationController pushViewController:registerViewController animated:YES];
-
-}
-
-- (void)eventMenuButtonPressed:(id)eventMenuButtonPressed {
-
-    [self.view endEditing:YES];
-    [self.frostedViewController.view endEditing:YES];
-
-    [self.frostedViewController presentMenuViewController];
-}
-
-- (void)setupMenuButton {
-
-    UIImage *normalImage = [UIImage imageNamed:@"menu"];
-    normalImage = [normalImage imageByFilledWithColor:[UIColor grayColor]];
-
-    [self.menuButton setImage:normalImage forState:UIControlStateNormal];
-    [self.menuButton setImage:normalImage forState:UIControlStateSelected];
-
-    UIImage *highlightedImage = [UIImage imageNamed: @"menu"];
-    highlightedImage = [highlightedImage imageByFilledWithColor:[UIColor lightGrayColor]];
-    [self.menuButton setImage:highlightedImage forState:UIControlStateHighlighted];
 
 }
 

@@ -74,6 +74,53 @@
             </objects>
             <point key="canvasLocation" x="930" y="884"/>
         </scene>
+        <!--About View Controller-->
+        <scene sceneID="Ddn-mC-nct">
+            <objects>
+                <viewController storyboardIdentifier="aboutScreen" id="cs2-0j-MxW" customClass="AboutViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MvY-5t-Iau"/>
+                        <viewControllerLayoutGuide type="bottom" id="uaf-jK-Ase"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1XM-xV-4Q9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Projekt z SOA :)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wLc-1f-anI">
+                                <rect key="frame" x="205" y="284" width="190" height="32"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="27"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.59215686274509804" green="0.54117647058823526" blue="0.4823529411764706" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="wLc-1f-anI" secondAttribute="centerX" id="a4A-rC-Pfd"/>
+                            <constraint firstAttribute="centerY" secondItem="wLc-1f-anI" secondAttribute="centerY" id="qoo-Ky-Dsd"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="D9u-rF-jLP">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="ipf-td-KKU">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jT7-Wr-B6Z">
+                                <rect key="frame" x="16" y="7" width="71" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="40" maxY="0.0"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="menuButton" destination="jT7-Wr-B6Z" id="kQk-oF-xUP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VJB-aS-k1s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117" y="1738"/>
+        </scene>
         <!--Trunk View Controller-->
         <scene sceneID="z6S-ad-32H">
             <objects>
@@ -156,7 +203,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="loginButton" destination="FvJ-eL-C5K" id="jhL-Ba-M0W"/>
-                        <outlet property="menuButton" destination="9wV-LY-dXt" id="bVp-cI-BSU"/>
+                        <outlet property="menuButton" destination="9wV-LY-dXt" id="tzO-t0-pL1"/>
                         <outlet property="registerButton" destination="Uzu-5C-x3S" id="sZa-GT-cfy"/>
                     </connections>
                 </viewController>
@@ -176,6 +223,7 @@
                     <connections>
                         <segue destination="lJn-Du-qgy" kind="relationship" relationship="rootViewController" id="eZE-lN-Re2"/>
                         <segue destination="8h0-9j-vuv" kind="show" identifier="trunk" id="4nG-82-EGB"/>
+                        <segue destination="cs2-0j-MxW" kind="push" id="wJM-Ju-J9e"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jXa-bA-7w0" userLabel="First Responder" sceneMemberID="firstResponder"/>

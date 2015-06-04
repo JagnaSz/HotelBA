@@ -77,10 +77,14 @@
 }
 
 - (void)createAboutScreen {
-
+    UIViewController *aboutViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"aboutScreen"];
+    self.hotelNavigationController.viewControllers = @[aboutViewController];
+    self.frostedViewController.contentViewController = self.hotelNavigationController;
+    [self.frostedViewController hideMenuViewController];
 }
 
 - (void)createReservationsScreen {
+
 
 }
 
