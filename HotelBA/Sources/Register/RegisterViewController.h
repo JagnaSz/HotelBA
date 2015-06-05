@@ -11,4 +11,5 @@
 
 @interface RegisterViewController : UIViewController <RegistrationDelegate>
 
+- (void)showLoginScreen;
 @end

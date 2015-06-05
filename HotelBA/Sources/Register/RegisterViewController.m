@@ -13,7 +13,8 @@
 #import "RegistrationDTO.h"
 #import "AddressDTO.h"
 #import "ContactDTO.h"
-#import <REFrostedViewController/REFrostedViewController.h>
+#import "UIAlertView+GRKAlertBlocks.h"
+#import "LoginViewController.h"
 
 @interface RegisterViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
@@ -68,11 +69,32 @@
 
     request.registrationDTO = registrationDTO;
     [remoteClient sendRegistration:request withDelegate:self];
+
+
 }
 
-- (void)onSendPhotoReportSuccess:(NSString *)response {
+- (void)onRegistrationSuccess:(NSString *)response {
 
     NSLog(response);
+    UIAlertView *alertView = [UIAlertView alertWithTitle:@"Sukces rejestracji!" message: @"Rejestracja przebiegła pomyślnie."];
+    [alertView addButtonWithTitle:@"OK" handler:nil];
+    __weak RegisterViewController *weakSelf = self;
+    [alertView addButtonWithTitle:@"Zaloguj się" handler: ^{
+        [weakSelf showLoginScreen];
+    }];
+
+    [alertView show];
+}
+
+
+- (void)showLoginScreen {
+
+    LoginViewController *logInViewController = [[LoginViewController alloc] init];
+    NSMutableArray *controllers = [NSMutableArray arrayWithArray:[self.navigationController viewControllers]];
+    [controllers removeLastObject];
+    [controllers addObject:logInViewController];
+    [self.navigationController setViewControllers:controllers.copy animated:YES];
+
 }
 
 - (void)onRemoteClientError:(ErrorResponse *)error {

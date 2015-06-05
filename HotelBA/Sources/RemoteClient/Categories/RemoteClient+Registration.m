@@ -22,7 +22,7 @@
 
                 if (responseDictionary != nil) {
 
-                    [delegate onSendPhotoReportSuccess:[NSString stringWithFormat:@"%@",responseDictionary]];
+                    [delegate onRegistrationSuccess:[NSString stringWithFormat:@"%@", responseDictionary]];
 
                 } else {
 //                    ErrorResponse *response = [ErrorResponse objectForDictionary:responseDictionary];

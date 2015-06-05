@@ -17,6 +17,6 @@
 
 @protocol RegistrationDelegate <RemoteClientDelegate>
 
-- (void)onSendPhotoReportSuccess:(NSString *)response;
+- (void)onRegistrationSuccess:(NSString *)response;
 
 @end
