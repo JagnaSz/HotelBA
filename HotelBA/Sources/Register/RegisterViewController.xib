@@ -6,16 +6,25 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController">
             <connections>
+                <outlet property="birthTextField" destination="46s-xU-3jE" id="gv9-2j-vku"/>
+                <outlet property="cityTextField" destination="bqp-Jv-Qc7" id="10K-Ud-Kz6"/>
                 <outlet property="confirmPasswordTextField" destination="A07-G6-9Nh" id="OdC-VZ-FqS"/>
+                <outlet property="countryTextField" destination="tWK-o5-cb3" id="uOx-yP-eWL"/>
                 <outlet property="emailTextField" destination="RGF-EE-oIo" id="3XS-VP-ju3"/>
+                <outlet property="houseNumberTextField" destination="qG9-vk-jqX" id="rIV-Oe-tZF"/>
+                <outlet property="lastNameTextField" destination="brA-YJ-eco" id="Ura-aB-8Gs"/>
+                <outlet property="nameTextField" destination="Dxo-sT-uY8" id="hR8-B1-sjR"/>
                 <outlet property="passwordTextField" destination="stT-ar-HdK" id="dSf-Kx-OzL"/>
+                <outlet property="phoneTextField" destination="bRw-Bg-ZLu" id="gk7-hF-eBC"/>
+                <outlet property="postalCodeTextField" destination="bq7-ea-rZ9" id="IfR-AE-SO8"/>
                 <outlet property="registerButton" destination="btU-zI-MUn" id="Unh-fn-8nz"/>
+                <outlet property="streetTextField" destination="Im3-Dd-iKh" id="0Hl-VY-uKA"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="596"/>
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="swT-cF-xf2" userLabel="Navigation">
@@ -26,10 +35,10 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Fn-NO-AaN" userLabel="Container">
-                    <rect key="frame" x="0.0" y="64" width="600" height="532"/>
+                    <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M0o-Fx-3Id">
-                            <rect key="frame" x="0.0" y="27" width="600" height="478"/>
+                            <rect key="frame" x="0.0" y="29" width="600" height="478"/>
                             <subviews>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Email" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="RGF-EE-oIo">
                                     <rect key="frame" x="20" y="0.0" width="560" height="40"/>
