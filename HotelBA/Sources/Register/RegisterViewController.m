@@ -99,7 +99,7 @@
 - (NSString *)getBirthDate {
 
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setLocale:[NSLocale localeWithLocaleIdentifier:@""];
+    [formatter setLocale:[NSLocale localeWithLocaleIdentifier:@""]];
     [formatter setDateFormat:@"dd/mm/rrrr"];
 
     NSDate *date = [formatter dateFromString:self.birthTextField.text];

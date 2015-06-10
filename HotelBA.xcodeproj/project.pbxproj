@@ -29,9 +29,11 @@
 		EE26618792B5E733E050ADBB /* MenuTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE26600C0840B9CA0727617B /* MenuTableViewDelegate.m */; };
 		EE2661E6EAF395BE41A30ACE /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266AE72EAC4D37BE310576 /* RegisterViewController.m */; };
 		EE26623887872FC6CE807C34 /* HotelNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266470CF485B804E48879D /* HotelNavigationController.m */; };
-		EE266460E2AAF1113776D055 /* RemoteClient+Registration.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2666C72D296FE8FF783E04 /* RemoteClient+Registration.m */; };
 		EE2664BF532601940B456E25 /* MenuOptionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2669E05589ACACE584D2B3 /* MenuOptionModel.m */; };
 		EE2664F10FDD5A016DA1B891 /* ErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2660AFF1B9C4A002224179 /* ErrorResponse.m */; };
+		EE2665A875367002476A3C42 /* RemoteClient+Registration.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266064CB1253D652C10A7C /* RemoteClient+Registration.m */; };
+		EE2665EE94B4FED057E651E0 /* RemoteClient+Login.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266AC6E6803909E53ACF5D /* RemoteClient+Login.m */; };
+		EE266610B7A487357ADA32A9 /* LoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2663240A72541D9288BC19 /* LoginRequest.m */; };
 		EE2666188E7570B75D1F6201 /* RegistrationDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = EE26681EE95027FE283BD553 /* RegistrationDTO.m */; };
 		EE266632684610079C561D6D /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266E3CA4F85DD9AA99C83F /* AboutViewController.m */; };
 		EE26693960916813EF83FE5A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266E231D686016B967FB13 /* ViewController.m */; };
@@ -87,9 +89,11 @@
 		EE266005D7863E267698414F /* AddressDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressDTO.m; sourceTree = "<group>"; };
 		EE26600C0840B9CA0727617B /* MenuTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewDelegate.m; sourceTree = "<group>"; };
 		EE2660226347245639B434F8 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		EE266064CB1253D652C10A7C /* RemoteClient+Registration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RemoteClient+Registration.m"; sourceTree = "<group>"; };
 		EE2660692EA5937EAB37011A /* MenuOptionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuOptionModel.h; sourceTree = "<group>"; };
 		EE2660AFF1B9C4A002224179 /* ErrorResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorResponse.m; sourceTree = "<group>"; };
 		EE2661D0621E7BA33273605C /* RegistrationDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationDTO.h; sourceTree = "<group>"; };
+		EE2663240A72541D9288BC19 /* LoginRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginRequest.m; sourceTree = "<group>"; };
 		EE26634598D372D0A112D4E2 /* RemoteClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteClient.m; sourceTree = "<group>"; };
 		EE266470CF485B804E48879D /* HotelNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelNavigationController.m; sourceTree = "<group>"; };
 		EE2664F0FE14B6AE4C100610 /* RemoteClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteClient.h; sourceTree = "<group>"; };
@@ -97,9 +101,7 @@
 		EE266601EEEC4762941CBDBB /* MenuTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewDelegate.h; sourceTree = "<group>"; };
 		EE26665018FBC40A476A0AEF /* RegistrationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationRequest.h; sourceTree = "<group>"; };
 		EE2666B68312E2485808CE8D /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
-		EE2666C72D296FE8FF783E04 /* RemoteClient+Registration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RemoteClient+Registration.m"; sourceTree = "<group>"; };
 		EE26676680820AD6A44CB1F3 /* ContactDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactDTO.h; sourceTree = "<group>"; };
-		EE2667B5C52BBC6F6813849F /* RemoteClient+Registration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RemoteClient+Registration.h"; sourceTree = "<group>"; };
 		EE2667D2FE4CECCCB16E1A88 /* MenuTableDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableDataSource.h; sourceTree = "<group>"; };
 		EE26681EE95027FE283BD553 /* RegistrationDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistrationDTO.m; sourceTree = "<group>"; };
 		EE266828C010766946F36C7A /* UIImage+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Helper.m"; sourceTree = "<group>"; };
@@ -108,14 +110,18 @@
 		EE266903FF7B8D8FEE32BBE3 /* ContactDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactDTO.m; sourceTree = "<group>"; };
 		EE2669E05589ACACE584D2B3 /* MenuOptionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuOptionModel.m; sourceTree = "<group>"; };
 		EE266A8A2105D7FC90314B39 /* ErrorResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorResponse.h; sourceTree = "<group>"; };
+		EE266AC6E6803909E53ACF5D /* RemoteClient+Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RemoteClient+Login.m"; sourceTree = "<group>"; };
 		EE266AE72EAC4D37BE310576 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		EE266AFD87F5570E364874D1 /* RegistrationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistrationRequest.m; sourceTree = "<group>"; };
 		EE266BBE581A74FBAAF4435D /* UIImage+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Helper.h"; sourceTree = "<group>"; };
 		EE266C8E36B715DC85A7D181 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EE266CABAC68840CAE1ECF28 /* RemoteClient+Registration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RemoteClient+Registration.h"; sourceTree = "<group>"; };
 		EE266CB837BF00F86AB2D9ED /* HotelNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelNavigationController.h; sourceTree = "<group>"; };
 		EE266D2E9F402EAE7EA5A7A3 /* RemoteClientDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteClientDelegate.h; sourceTree = "<group>"; };
+		EE266D3AB6C21D1A5E63AE92 /* RemoteClient+Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RemoteClient+Login.h"; sourceTree = "<group>"; };
 		EE266E231D686016B967FB13 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EE266E3CA4F85DD9AA99C83F /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		EE266EFD41520940FF32E273 /* LoginRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginRequest.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,6 +293,15 @@
 			path = RootViewController;
 			sourceTree = "<group>";
 		};
+		EE26648001D5AD78C7C08614 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EE266AC6E6803909E53ACF5D /* RemoteClient+Login.m */,
+				EE266D3AB6C21D1A5E63AE92 /* RemoteClient+Login.h */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		EE266504E110733803864939 /* RemoteClient */ = {
 			isa = PBXGroup;
 			children = (
@@ -319,6 +334,24 @@
 				725A53C91B207CB6008F3A7F /* LoginViewController.xib */,
 			);
 			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		EE26662F91C7A7CCE5B3450F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EE2663240A72541D9288BC19 /* LoginRequest.m */,
+				EE266EFD41520940FF32E273 /* LoginRequest.h */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		EE266683C899254B36963415 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				EE266064CB1253D652C10A7C /* RemoteClient+Registration.m */,
+				EE266CABAC68840CAE1ECF28 /* RemoteClient+Registration.h */,
+			);
+			path = Registration;
 			sourceTree = "<group>";
 		};
 		EE26668A590282F18B26B584 /* DTO */ = {
@@ -378,8 +411,8 @@
 		EE266A58B25ECE7890A01D0D /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				EE2666C72D296FE8FF783E04 /* RemoteClient+Registration.m */,
-				EE2667B5C52BBC6F6813849F /* RemoteClient+Registration.h */,
+				EE26648001D5AD78C7C08614 /* Login */,
+				EE266683C899254B36963415 /* Registration */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -416,6 +449,7 @@
 			isa = PBXGroup;
 			children = (
 				EE2662FF0216203E3DFC09B2 /* Registration */,
+				EE26662F91C7A7CCE5B3450F /* Login */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -640,7 +674,9 @@
 				EE2661545348C58C99D0963D /* AddressDTO.m in Sources */,
 				EE266056D1A3A322FE7BAF87 /* ContactDTO.m in Sources */,
 				EE266A8CF9B0E7C4DC159623 /* RegistrationRequest.m in Sources */,
-				EE266460E2AAF1113776D055 /* RemoteClient+Registration.m in Sources */,
+				EE2665A875367002476A3C42 /* RemoteClient+Registration.m in Sources */,
+				EE2665EE94B4FED057E651E0 /* RemoteClient+Login.m in Sources */,
+				EE266610B7A487357ADA32A9 /* LoginRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
