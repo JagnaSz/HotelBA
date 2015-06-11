@@ -16,7 +16,7 @@
 @interface LoginResponse : NSObject
 
 @property(nonatomic, strong) NSDictionary *userAccount;
-
+-(NSString *) userHonor;
 @end
 
 @protocol GetUserAccountDelegate <RemoteClientDelegate>

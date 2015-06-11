@@ -8,11 +8,15 @@
 
 #import <REFrostedViewController/UIViewController+REFrostedViewController.h>
 #import <REFrostedViewController/REFrostedViewController.h>
+#import "MenuTableViewController.h"
 #import "LoginViewController.h"
 #import "LoginRequest.h"
 #import "ErrorResponse.h"
 #import "RemoteClient.h"
 #import "RemoteClient+Login.h"
+#import "MenuTableViewController.h"
+#import "UIAlertView+GRKAlertBlocks.h"
+#import "CenterViewController.h"
 
 @interface LoginViewController () <GetUserAccountDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
@@ -44,11 +48,31 @@
 }
 
 - (void)onGetUserAccountSuccess:(LoginResponse *)response {
-        NSLog(response.userAccount);
+    [self.updateMenuDelegate updateMenu:response.userHonor];
+    [self loginSuccessAlert];
+}
+
+- (void)loginSuccessAlert {
+    UIAlertView *alertView = [UIAlertView alertWithTitle:@"Sukces logowania" message:@"Logowanie zakończyło się sukcesem!"];
+    __weak LoginViewController *weakSelf = self;
+    [alertView addButtonWithTitle:@"OK" handler:^{
+        [weakSelf showCenterScreen];
+    }];
+
+    [alertView show];
+}
+
+- (void)showCenterScreen {
+
+    [self.navigationController popViewControllerAnimated:YES];
+
 }
 
 - (void)onRemoteClientError:(ErrorResponse *)error {
+    UIAlertView *alertView = [UIAlertView alertWithTitle:@"Error" message:error.description];
+    [alertView addButtonWithTitle:@"OK"];
 
+    [alertView show];
 }
 
 

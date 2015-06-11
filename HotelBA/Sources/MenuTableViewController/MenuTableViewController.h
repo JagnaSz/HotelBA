@@ -18,10 +18,17 @@ typedef NS_ENUM(NSInteger, MenuType) {
     MenuTypeAbout
 };
 
+@protocol UpdateMenuTableViewProtocol
+- (void)updateMenu:(NSString *)userName;;
+@end;
+
 @protocol MenuOptionsProtocol
 -(void) didSelectOptionWithModel:(MenuOptionModel *) model;
 @end;
 
-@interface MenuTableViewController : UITableViewController
+@interface MenuTableViewController : UITableViewController <UpdateMenuTableViewProtocol>
 
+@property(nonatomic) BOOL isUserLoggedin;
+
+@property(nonatomic, copy) NSString *userName;
 @end

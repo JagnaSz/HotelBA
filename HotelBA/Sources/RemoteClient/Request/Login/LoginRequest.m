@@ -14,4 +14,8 @@
 @implementation LoginResponse {
 
 }
+- (NSString *)userHonor {
+    return [NSString stringWithFormat:@"%@ %@", [self.userAccount[@"account"] objectForKey:@"firstName"], [self.userAccount[@"account"] objectForKey:@"lastName"]];
+}
+
 @end

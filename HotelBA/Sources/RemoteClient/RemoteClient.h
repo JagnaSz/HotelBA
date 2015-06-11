@@ -17,6 +17,8 @@ static NSString *const apiAddressString = @"http://soahotelcore-hotelcore.rhclou
 
 - (void)postPath:(NSString *)path params:(NSDictionary *)params success:(void (^)(NSDictionary *))successBlock andDelegate:(id <RemoteClientDelegate>)delegate;
 
+- (void)postPath:(NSString *)path params:(NSDictionary *)params successWithJSON:(void (^)(NSDictionary *response))successBlock andDelegate:(id <RemoteClientDelegate>)delegate;
+
 - (void)getPath:(NSString *)path params:(NSDictionary *)params success:(void (^)(NSDictionary *response))successBlock andDelegate:(id <RemoteClientDelegate>)delegate;
 
 @end

@@ -21,6 +21,8 @@
 @property (nonatomic, strong) MenuTableDataSource *menuDataSource;
 @property (nonatomic, strong) HotelNavigationController *hotelNavigationController;
 @property(nonatomic, strong) MenuTableViewDelegate *menuDelegate;
+
+@property (nonatomic,strong) TrunkViewController *trunk;
 @end
 
 @implementation MenuTableViewController
@@ -42,11 +44,11 @@
 
     [self.tableView registerNib:[UINib nibWithNibName:@"ProfileHeader" bundle:nil] forHeaderFooterViewReuseIdentifier:ProfileHeaderIdentifier];
 
-    self.menuDataSource = [[MenuTableDataSource alloc] initWithCellIdentifier:MenuTableViewCellIdentifier isUserRegistered:NO];
+    self.menuDataSource = [[MenuTableDataSource alloc] initWithCellIdentifier:MenuTableViewCellIdentifier isUserRegistered:self.isUserLoggedin];
     self.tableView.dataSource = self.menuDataSource;
     [self.tableView registerNib:[MenuTableViewCell nib] forCellReuseIdentifier:MenuTableViewCellIdentifier];
 
-    self.menuDelegate = [[MenuTableViewDelegate alloc] initWithItems:self.menuDataSource.items];
+    self.menuDelegate = [[MenuTableViewDelegate alloc] initWithItems:self.menuDataSource.items userName:self.userName];
     self.tableView.delegate = self.menuDelegate;
     self.menuDelegate.optionsDelegate = self;
 
@@ -93,10 +95,18 @@
 }
 
 - (void)createTrunkScreen {
-    TrunkViewController *trunk = [self.storyboard instantiateViewControllerWithIdentifier:@"trunkScreen"];
-    self.hotelNavigationController.viewControllers = @[trunk];
+    self.trunk = [self.storyboard instantiateViewControllerWithIdentifier:@"trunkScreen"];
+    self.trunk.menuTableView = self;
+    self.hotelNavigationController.viewControllers = @[self.trunk];
     self.frostedViewController.contentViewController = self.hotelNavigationController;
     [self.frostedViewController hideMenuViewController];
+}
+
+- (void)updateMenu:(NSString *) userName  {
+    self.isUserLoggedin = true;
+    self.userName = userName;
+    [self setupTableView];
+    [self.tableView reloadData];
 }
 
 

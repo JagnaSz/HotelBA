@@ -9,6 +9,7 @@
 #import "TrunkViewController.h"
 #import "RegisterViewController.h"
 #import "LoginViewController.h"
+#import "MenuTableViewController.h"
 
 @interface TrunkViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
@@ -33,15 +34,16 @@
 
 - (void)eventLoginButtonPressed:(id)eventLoginButtonPressed {
 
-    LoginViewController *loginViewController = [[LoginViewController alloc] init];
-    [self.navigationController pushViewController:loginViewController animated:YES];
+    self.loginViewController = [[LoginViewController alloc] init];
+    self.loginViewController.updateMenuDelegate = self.menuTableView;
+    [self.navigationController pushViewController:self.loginViewController animated:YES];
 
 }
 
 - (void)eventRegisterButtonPressed:(id)eventRegisterButtonPressed {
 
-    RegisterViewController *registerViewController = [[RegisterViewController alloc] init];
-    [self.navigationController pushViewController:registerViewController animated:YES];
+    self.registerViewController = [[RegisterViewController alloc] init];
+    [self.navigationController pushViewController:self.registerViewController animated:YES];
 
 }
 

@@ -38,11 +38,11 @@
 
         NSString *pathURLString = [NSString stringWithFormat:apiAddressString];
         self.httpClient = [[AFHTTPRequestOperationManager alloc] initWithBaseURL:[NSURL URLWithString:pathURLString]];
-       // self.httpClient.requestSerializer = [AFHTTPRequestSerializer serializer];
+        self.httpClient.requestSerializer = [AFHTTPRequestSerializer serializer];
         AFJSONRequestSerializer *requestSerializer = [AFJSONRequestSerializer serializer];
         [requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
         self.httpClient.requestSerializer = requestSerializer;
-       // self.httpClient.responseSerializer = [AFHTTPResponseSerializer serializer];
+        self.httpClient.responseSerializer = [AFHTTPResponseSerializer serializer];
         [self.httpClient.responseSerializer setAcceptableContentTypes:[ NSSet setWithObject:@"application/json"]];
     }
 
@@ -54,24 +54,8 @@
 
     [self.httpClient POST:path parameters:params success:^void(AFHTTPRequestOperation *operation, id result) {
 
+                successBlock(result);
 
-                      NSData *const data = result;
-
-                     // if (data != nil) {
-                       //   NSError *parsingError;
-                         // dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&parsingError];
-
-                          if (result != nil) {
-
-                              successBlock(result);
-
-                          } else {
-                              ErrorResponse *response;
-                              response = [ErrorResponse responseWithError:nil];
-                              [delegate onRemoteClientError:response];
-
-                          }
-                     // }
                   }
                   failure:^void(AFHTTPRequestOperation *operation, NSError *error) {
 
@@ -80,6 +64,26 @@
                   }];
 
 }
+
+- (void)postPath:(NSString *)path  params:(NSDictionary *)params successWithJSON:(void (^)(NSDictionary *response))successBlock   andDelegate:(id <RemoteClientDelegate>)delegate {
+
+    [self.httpClient POST:path parameters:params success:^void(AFHTTPRequestOperation *operation, id result) {
+
+                NSData *const data = result;
+                NSDictionary *dictionary;
+                 if (data != nil)
+                     dictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+                successBlock(dictionary);
+
+            }
+                  failure:^void(AFHTTPRequestOperation *operation, NSError *error) {
+
+                      ErrorResponse *response = [ErrorResponse responseWithError:error];
+                      [delegate onRemoteClientError:response];
+                  }];
+
+}
+
 
 - (void)getPath:(NSString *)path params:(NSDictionary *)params success:(void (^)(NSDictionary *response))successBlock   andDelegate:(id <RemoteClientDelegate>)delegate  {
 

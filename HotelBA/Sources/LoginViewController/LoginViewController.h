@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol UpdateMenuTableViewProtocol;
+
 @interface LoginViewController : UIViewController
 
+@property (nonatomic, weak) id<UpdateMenuTableViewProtocol> updateMenuDelegate;
+
+- (void)showCenterScreen;
 @end

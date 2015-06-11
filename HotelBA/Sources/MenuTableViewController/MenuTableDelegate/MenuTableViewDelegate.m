@@ -15,10 +15,11 @@
 
 @implementation MenuTableViewDelegate
 
-- (id)initWithItems:(NSArray *)anItems {
+- (id)initWithItems:(NSArray *)anItems userName: (NSString *) name {
     self = [super init];
     if (self) {
         self.items = anItems;
+        self.userHonor = name;
     }
 
     return self;
@@ -26,9 +27,12 @@
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
 
-    ProfileHeader* header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:ProfileHeaderIdentifier];
-    [header setupProfileDataWithImageName:@"user_placeholder" name:@"Employee"];
-    return header;
+   self.header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:ProfileHeaderIdentifier];
+    if(self.userHonor == nil)
+        self.userHonor = @"Emyployee";
+
+    [self.header setupProfileDataWithImageName:@"user_placeholder" name:self.userHonor];
+    return self.header;
 
 }
 

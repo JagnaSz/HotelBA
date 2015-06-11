@@ -7,10 +7,14 @@
 #import <UIKit/UIKit.h>
 
 @protocol MenuOptionsProtocol;
+@class ProfileHeader;
 
 
 @interface MenuTableViewDelegate : NSObject <UITableViewDelegate>
 
 @property (nonatomic, weak) id<MenuOptionsProtocol> optionsDelegate;
-- (id)initWithItems:(NSArray *)anItems;
+@property (nonatomic, strong)  ProfileHeader* header;
+@property(nonatomic, strong) NSString *userHonor;
+
+- (id)initWithItems:(NSArray *)anItems userName:(NSString *) name;
 @end
