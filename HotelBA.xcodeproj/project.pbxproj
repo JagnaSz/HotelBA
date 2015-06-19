@@ -33,6 +33,7 @@
 		EE26623887872FC6CE807C34 /* HotelNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266470CF485B804E48879D /* HotelNavigationController.m */; };
 		EE2664BF532601940B456E25 /* MenuOptionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2669E05589ACACE584D2B3 /* MenuOptionModel.m */; };
 		EE2664F10FDD5A016DA1B891 /* ErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2660AFF1B9C4A002224179 /* ErrorResponse.m */; };
+		EE26652A3C579E2D1521FD06 /* HotelDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266A054E0C9E2455BB9560 /* HotelDetailViewController.m */; };
 		EE2665A875367002476A3C42 /* RemoteClient+Registration.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266064CB1253D652C10A7C /* RemoteClient+Registration.m */; };
 		EE2665EE94B4FED057E651E0 /* RemoteClient+Login.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266AC6E6803909E53ACF5D /* RemoteClient+Login.m */; };
 		EE2666044F51898979087863 /* HotelResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2668F545B900B9A2D126E9 /* HotelResponse.m */; };
@@ -101,6 +102,7 @@
 		EE266064CB1253D652C10A7C /* RemoteClient+Registration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RemoteClient+Registration.m"; sourceTree = "<group>"; };
 		EE2660692EA5937EAB37011A /* MenuOptionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuOptionModel.h; sourceTree = "<group>"; };
 		EE2660AFF1B9C4A002224179 /* ErrorResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorResponse.m; sourceTree = "<group>"; };
+		EE26615CACDC048F0B7BBBD7 /* HotelDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelDetailViewController.h; sourceTree = "<group>"; };
 		EE2661D0621E7BA33273605C /* RegistrationDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationDTO.h; sourceTree = "<group>"; };
 		EE2663240A72541D9288BC19 /* LoginRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginRequest.m; sourceTree = "<group>"; };
 		EE26634598D372D0A112D4E2 /* RemoteClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteClient.m; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 		EE2668F545B900B9A2D126E9 /* HotelResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelResponse.m; sourceTree = "<group>"; };
 		EE266903FF7B8D8FEE32BBE3 /* ContactDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactDTO.m; sourceTree = "<group>"; };
 		EE2669E05589ACACE584D2B3 /* MenuOptionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuOptionModel.m; sourceTree = "<group>"; };
+		EE266A054E0C9E2455BB9560 /* HotelDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelDetailViewController.m; sourceTree = "<group>"; };
 		EE266A8A2105D7FC90314B39 /* ErrorResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorResponse.h; sourceTree = "<group>"; };
 		EE266AC6E6803909E53ACF5D /* RemoteClient+Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RemoteClient+Login.m"; sourceTree = "<group>"; };
 		EE266AE72EAC4D37BE310576 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
@@ -487,6 +490,8 @@
 				72236EE21B349E3100190B24 /* HotelsListTableTableViewController.h */,
 				72236EE31B349E3100190B24 /* HotelsListTableTableViewController.m */,
 				EE2660BF8996C0F8DF299FBA /* Cell */,
+				EE266A054E0C9E2455BB9560 /* HotelDetailViewController.m */,
+				EE26615CACDC048F0B7BBBD7 /* HotelDetailViewController.h */,
 			);
 			path = Hotels;
 			sourceTree = "<group>";
@@ -739,6 +744,7 @@
 				EE2668E796A4796BBFB0BEF3 /* HotelDTO.m in Sources */,
 				EE2666044F51898979087863 /* HotelResponse.m in Sources */,
 				EE266C39D2C8682392BFF945 /* RemoteClient+Hotels.m in Sources */,
+				EE26652A3C579E2D1521FD06 /* HotelDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
