@@ -43,7 +43,7 @@
         [requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
         self.httpClient.requestSerializer = requestSerializer;
         self.httpClient.responseSerializer = [AFHTTPResponseSerializer serializer];
-        [self.httpClient.responseSerializer setAcceptableContentTypes:[ NSSet setWithObject:@"application/json"]];
+
     }
 
     return self;
@@ -66,6 +66,8 @@
 }
 
 - (void)postPath:(NSString *)path  params:(NSDictionary *)params successWithJSON:(void (^)(NSDictionary *response))successBlock   andDelegate:(id <RemoteClientDelegate>)delegate {
+
+    [self.httpClient.responseSerializer setAcceptableContentTypes:[ NSSet setWithObject:@"application/json"]];
 
     [self.httpClient POST:path parameters:params success:^void(AFHTTPRequestOperation *operation, id result) {
 

@@ -51,7 +51,7 @@
     if(isUserRegistered) {
         menuArray = [NSMutableArray arrayWithArray:@[
                 [[MenuOptionModel alloc] initWithType:MenuTypeAccount title:@"Profil" image:@"account"],
-                [[MenuOptionModel alloc] initWithType:MenuTypeReservations title:@"Rezerwacje" image:@"reservations"]
+                [[MenuOptionModel alloc] initWithType:MenuTypeHotels title:@"Hotele" image:@"reservations"]
         ]];
     }
     else

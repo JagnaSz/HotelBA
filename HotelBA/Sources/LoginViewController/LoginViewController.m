@@ -17,6 +17,8 @@
 #import "MenuTableViewController.h"
 #import "UIAlertView+GRKAlertBlocks.h"
 #import "CenterViewController.h"
+#import "HotelNavigationController.h"
+#import "AboutViewController.h"
 
 @interface LoginViewController () <GetUserAccountDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
@@ -63,8 +65,11 @@
 }
 
 - (void)showCenterScreen {
-
-    [self.navigationController popViewControllerAnimated:YES];
+    HotelNavigationController *hotelNavigationController = [self.frostedViewController.storyboard instantiateViewControllerWithIdentifier:@"centerController"];
+    AboutViewController *aboutViewController = [self.frostedViewController.storyboard instantiateViewControllerWithIdentifier:@"aboutScreen"];
+//    hotelNavigationController.viewControllers = @[aboutViewController];
+//    self.frostedViewController.contentViewController = hotelNavigationController;
+    [self.navigationController pushViewController:aboutViewController animated:YES];
 
 }
 

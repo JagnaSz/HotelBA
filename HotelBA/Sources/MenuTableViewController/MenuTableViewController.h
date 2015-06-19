@@ -14,7 +14,7 @@
 typedef NS_ENUM(NSInteger, MenuType) {
     MenuTypeLogin,
     MenuTypeAccount,
-    MenuTypeReservations,
+    MenuTypeHotels,
     MenuTypeAbout
 };
 

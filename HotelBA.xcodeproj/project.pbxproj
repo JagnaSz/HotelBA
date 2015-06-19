@@ -15,6 +15,8 @@
 		7216B76A1B0E41C50065B180 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7216B7691B0E41C50065B180 /* Images.xcassets */; };
 		7216B76D1B0E41C50065B180 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7216B76B1B0E41C50065B180 /* LaunchScreen.xib */; };
 		7216B7791B0E41C50065B180 /* HotelBATests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7216B7781B0E41C50065B180 /* HotelBATests.m */; };
+		72236EE41B349E3100190B24 /* HotelsListTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72236EE31B349E3100190B24 /* HotelsListTableTableViewController.m */; };
+		72236EE71B349E6C00190B24 /* HotelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72236EE61B349E6C00190B24 /* HotelTableViewCell.m */; };
 		725A53CA1B207CB6008F3A7F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 725A53C81B207CB6008F3A7F /* LoginViewController.m */; };
 		725A53CB1B207CB6008F3A7F /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 725A53C91B207CB6008F3A7F /* LoginViewController.xib */; };
 		725A53CE1B208403008F3A7F /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 725A53CD1B208403008F3A7F /* BaseViewController.m */; };
@@ -33,12 +35,15 @@
 		EE2664F10FDD5A016DA1B891 /* ErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2660AFF1B9C4A002224179 /* ErrorResponse.m */; };
 		EE2665A875367002476A3C42 /* RemoteClient+Registration.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266064CB1253D652C10A7C /* RemoteClient+Registration.m */; };
 		EE2665EE94B4FED057E651E0 /* RemoteClient+Login.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266AC6E6803909E53ACF5D /* RemoteClient+Login.m */; };
+		EE2666044F51898979087863 /* HotelResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2668F545B900B9A2D126E9 /* HotelResponse.m */; };
 		EE266610B7A487357ADA32A9 /* LoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2663240A72541D9288BC19 /* LoginRequest.m */; };
 		EE2666188E7570B75D1F6201 /* RegistrationDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = EE26681EE95027FE283BD553 /* RegistrationDTO.m */; };
 		EE266632684610079C561D6D /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266E3CA4F85DD9AA99C83F /* AboutViewController.m */; };
+		EE2668E796A4796BBFB0BEF3 /* HotelDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = EE26680584182967FE755104 /* HotelDTO.m */; };
 		EE26693960916813EF83FE5A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266E231D686016B967FB13 /* ViewController.m */; };
 		EE2669E02778B8EF3C41D830 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE2660226347245639B434F8 /* RegisterViewController.xib */; };
 		EE266A8CF9B0E7C4DC159623 /* RegistrationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266AFD87F5570E364874D1 /* RegistrationRequest.m */; };
+		EE266C39D2C8682392BFF945 /* RemoteClient+Hotels.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2666D66B3396367BD89CB9 /* RemoteClient+Hotels.m */; };
 		EE266E1F5686AC408B46CA94 /* UIImage+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266828C010766946F36C7A /* UIImage+Helper.m */; };
 		EE266E5B20796B269FFCFD14 /* RemoteClient.m in Sources */ = {isa = PBXBuildFile; fileRef = EE26634598D372D0A112D4E2 /* RemoteClient.m */; };
 		EE266FAB174B7FBF05307FDA /* MenuTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = EE26684DA35CD791390B96C9 /* MenuTableDataSource.m */; };
@@ -70,6 +75,10 @@
 		7216B7721B0E41C50065B180 /* HotelBATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HotelBATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7216B7771B0E41C50065B180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7216B7781B0E41C50065B180 /* HotelBATests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HotelBATests.m; sourceTree = "<group>"; };
+		72236EE21B349E3100190B24 /* HotelsListTableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelsListTableTableViewController.h; sourceTree = "<group>"; };
+		72236EE31B349E3100190B24 /* HotelsListTableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelsListTableTableViewController.m; sourceTree = "<group>"; };
+		72236EE51B349E6C00190B24 /* HotelTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelTableViewCell.h; sourceTree = "<group>"; };
+		72236EE61B349E6C00190B24 /* HotelTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelTableViewCell.m; sourceTree = "<group>"; };
 		725A53C71B207CB6008F3A7F /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		725A53C81B207CB6008F3A7F /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		725A53C91B207CB6008F3A7F /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -101,12 +110,16 @@
 		EE266601EEEC4762941CBDBB /* MenuTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewDelegate.h; sourceTree = "<group>"; };
 		EE26665018FBC40A476A0AEF /* RegistrationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationRequest.h; sourceTree = "<group>"; };
 		EE2666B68312E2485808CE8D /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		EE2666D66B3396367BD89CB9 /* RemoteClient+Hotels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RemoteClient+Hotels.m"; sourceTree = "<group>"; };
 		EE26676680820AD6A44CB1F3 /* ContactDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactDTO.h; sourceTree = "<group>"; };
+		EE266770CCEF9C522E9C4875 /* HotelResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelResponse.h; sourceTree = "<group>"; };
 		EE2667D2FE4CECCCB16E1A88 /* MenuTableDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableDataSource.h; sourceTree = "<group>"; };
+		EE26680584182967FE755104 /* HotelDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelDTO.m; sourceTree = "<group>"; };
 		EE26681EE95027FE283BD553 /* RegistrationDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistrationDTO.m; sourceTree = "<group>"; };
 		EE266828C010766946F36C7A /* UIImage+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Helper.m"; sourceTree = "<group>"; };
 		EE26684DA35CD791390B96C9 /* MenuTableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableDataSource.m; sourceTree = "<group>"; };
 		EE266863B2CB08B5893D1AA9 /* AddressDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressDTO.h; sourceTree = "<group>"; };
+		EE2668F545B900B9A2D126E9 /* HotelResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelResponse.m; sourceTree = "<group>"; };
 		EE266903FF7B8D8FEE32BBE3 /* ContactDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactDTO.m; sourceTree = "<group>"; };
 		EE2669E05589ACACE584D2B3 /* MenuOptionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuOptionModel.m; sourceTree = "<group>"; };
 		EE266A8A2105D7FC90314B39 /* ErrorResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorResponse.h; sourceTree = "<group>"; };
@@ -114,6 +127,7 @@
 		EE266AE72EAC4D37BE310576 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		EE266AFD87F5570E364874D1 /* RegistrationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistrationRequest.m; sourceTree = "<group>"; };
 		EE266BBE581A74FBAAF4435D /* UIImage+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Helper.h"; sourceTree = "<group>"; };
+		EE266C6A1C1B7D06B3023D6C /* RemoteClient+Hotels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RemoteClient+Hotels.h"; sourceTree = "<group>"; };
 		EE266C8E36B715DC85A7D181 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		EE266CABAC68840CAE1ECF28 /* RemoteClient+Registration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RemoteClient+Registration.h"; sourceTree = "<group>"; };
 		EE266CB837BF00F86AB2D9ED /* HotelNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelNavigationController.h; sourceTree = "<group>"; };
@@ -122,6 +136,7 @@
 		EE266E231D686016B967FB13 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EE266E3CA4F85DD9AA99C83F /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		EE266EFD41520940FF32E273 /* LoginRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginRequest.h; sourceTree = "<group>"; };
+		EE266F29051107194DFC5C43 /* HotelDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelDTO.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +235,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EE26607665189775E9C3913F /* Hotels */ = {
+			isa = PBXGroup;
+			children = (
+				EE2668F545B900B9A2D126E9 /* HotelResponse.m */,
+				EE266770CCEF9C522E9C4875 /* HotelResponse.h */,
+			);
+			path = Hotels;
+			sourceTree = "<group>";
+		};
+		EE2660BF8996C0F8DF299FBA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				72236EE51B349E6C00190B24 /* HotelTableViewCell.h */,
+				72236EE61B349E6C00190B24 /* HotelTableViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		EE2660D3F36A1869F060C513 /* BaseViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +297,15 @@
 				725D49B61B0E4B1E005D4AF9 /* CenterViewController.m */,
 			);
 			path = CenterViewController;
+			sourceTree = "<group>";
+		};
+		EE266286AF3360F2D4FB1248 /* HotelDTO */ = {
+			isa = PBXGroup;
+			children = (
+				EE26680584182967FE755104 /* HotelDTO.m */,
+				EE266F29051107194DFC5C43 /* HotelDTO.h */,
+			);
+			path = HotelDTO;
 			sourceTree = "<group>";
 		};
 		EE2662FF0216203E3DFC09B2 /* Registration */ = {
@@ -360,6 +402,7 @@
 				EE26646F31362D1BC8A47361 /* RegistrationDTO */,
 				EE26685D6F1E6DBF41FA4581 /* AddressDTO */,
 				EE266E6071BF6E2BBFBD7269 /* ContactDTO */,
+				EE266286AF3360F2D4FB1248 /* HotelDTO */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -413,6 +456,8 @@
 			children = (
 				EE26648001D5AD78C7C08614 /* Login */,
 				EE266683C899254B36963415 /* Registration */,
+				EE2666D66B3396367BD89CB9 /* RemoteClient+Hotels.m */,
+				EE266C6A1C1B7D06B3023D6C /* RemoteClient+Hotels.h */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -436,6 +481,16 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		EE266C454EFF60422E9369DC /* Hotels */ = {
+			isa = PBXGroup;
+			children = (
+				72236EE21B349E3100190B24 /* HotelsListTableTableViewController.h */,
+				72236EE31B349E3100190B24 /* HotelsListTableTableViewController.m */,
+				EE2660BF8996C0F8DF299FBA /* Cell */,
+			);
+			path = Hotels;
+			sourceTree = "<group>";
+		};
 		EE266CA33D3BA82E6042A9FE /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -450,6 +505,7 @@
 			children = (
 				EE2662FF0216203E3DFC09B2 /* Registration */,
 				EE26662F91C7A7CCE5B3450F /* Login */,
+				EE26607665189775E9C3913F /* Hotels */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -500,6 +556,7 @@
 				EE2660D3F36A1869F060C513 /* BaseViewController */,
 				EE26616FA1087BCEA27C3F33 /* AboutViewController */,
 				EE266504E110733803864939 /* RemoteClient */,
+				EE266C454EFF60422E9369DC /* Hotels */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -657,6 +714,7 @@
 				7202998E1B0F324700902B43 /* TrunkViewController.m in Sources */,
 				7216B75F1B0E41C50065B180 /* main.m in Sources */,
 				EE26693960916813EF83FE5A /* ViewController.m in Sources */,
+				72236EE71B349E6C00190B24 /* HotelTableViewCell.m in Sources */,
 				725D49B71B0E4B1E005D4AF9 /* CenterViewController.m in Sources */,
 				725D49BA1B0E640C005D4AF9 /* ProfileHeader.m in Sources */,
 				EE266E1F5686AC408B46CA94 /* UIImage+Helper.m in Sources */,
@@ -677,6 +735,10 @@
 				EE2665A875367002476A3C42 /* RemoteClient+Registration.m in Sources */,
 				EE2665EE94B4FED057E651E0 /* RemoteClient+Login.m in Sources */,
 				EE266610B7A487357ADA32A9 /* LoginRequest.m in Sources */,
+				72236EE41B349E3100190B24 /* HotelsListTableTableViewController.m in Sources */,
+				EE2668E796A4796BBFB0BEF3 /* HotelDTO.m in Sources */,
+				EE2666044F51898979087863 /* HotelResponse.m in Sources */,
+				EE266C39D2C8682392BFF945 /* RemoteClient+Hotels.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

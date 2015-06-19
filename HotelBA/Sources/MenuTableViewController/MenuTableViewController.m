@@ -65,8 +65,8 @@
         case MenuTypeAccount:
             [self createAccountScreen];
             break;
-        case MenuTypeReservations:
-            [self createReservationsScreen];
+        case MenuTypeHotels:
+            [self createHotelsScreen];
             break;
         case MenuTypeAbout:
             [self createAboutScreen];
@@ -85,8 +85,11 @@
     [self.frostedViewController hideMenuViewController];
 }
 
-- (void)createReservationsScreen {
-
+- (void)createHotelsScreen {
+    UITableViewController *hotelsListViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"hotelsTableViewController"];
+    self.hotelNavigationController.viewControllers = @[hotelsListViewController];
+    self.frostedViewController.contentViewController = self.hotelNavigationController;
+    [self.frostedViewController hideMenuViewController];
 
 }
 
