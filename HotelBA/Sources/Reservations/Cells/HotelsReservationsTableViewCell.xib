@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="hotelsReservationsCell" rowHeight="217" id="KGk-i7-Jjw" customClass="HotelsReservationsTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="217"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILL-CO-x3x" userLabel="id">
+                        <rect key="frame" x="13" y="13" width="60" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="BQr-vc-wgW"/>
+                            <constraint firstAttribute="height" constant="21" id="rlx-9x-CbA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nok-PX-qpB" userLabel="date">
+                        <rect key="frame" x="13" y="42" width="291" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Xw-ia-3I4" userLabel="honor">
+                        <rect key="frame" x="13" y="67" width="291" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AqG-RW-WTR" userLabel="email">
+                        <rect key="frame" x="13" y="92" width="291" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CgV-kp-Z29">
+                        <rect key="frame" x="8" y="114" width="304" height="1"/>
+                        <color key="backgroundColor" red="0.59215686270000001" green="0.54117647059999996" blue="0.4823529412" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="ac6-nV-Sjn"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2n-FI-7bL" userLabel="pokój">
+                        <rect key="frame" x="13" y="123" width="291" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkG-5E-BRH" userLabel="opis pokoju">
+                        <rect key="frame" x="13" y="148" width="291" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdm-mH-mKK" userLabel="opcjepokoju">
+                        <rect key="frame" x="13" y="173" width="291" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Za-hi-QfA">
+                        <rect key="frame" x="234" y="8" width="78" height="30"/>
+                        <state key="normal" title="Complaints">
+                            <color key="titleColor" red="0.59215686270000001" green="0.54117647059999996" blue="0.4823529412" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mdm-mH-mKK" firstAttribute="top" secondItem="vkG-5E-BRH" secondAttribute="bottom" constant="8" id="00v-3I-cZm"/>
+                    <constraint firstItem="ILL-CO-x3x" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="8Nj-C2-lXy"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="mdm-mH-mKK" secondAttribute="bottom" constant="8" id="9yw-04-Dzl"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="B2n-FI-7bL" secondAttribute="trailing" constant="8" id="AMa-NV-iWq"/>
+                    <constraint firstItem="mdm-mH-mKK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="Dom-Au-nNl"/>
+                    <constraint firstItem="AqG-RW-WTR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="FfG-2p-dGu"/>
+                    <constraint firstItem="AqG-RW-WTR" firstAttribute="top" secondItem="4Xw-ia-3I4" secondAttribute="bottom" constant="8" id="NPP-rL-H1S"/>
+                    <constraint firstItem="CgV-kp-Z29" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="TEC-7a-lzi"/>
+                    <constraint firstItem="nok-PX-qpB" firstAttribute="top" secondItem="ILL-CO-x3x" secondAttribute="bottom" constant="8" id="UHT-ii-XJY"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="AqG-RW-WTR" secondAttribute="trailing" constant="8" id="bIR-Ty-uc0"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="nok-PX-qpB" secondAttribute="trailing" constant="8" id="c7R-0I-4gZ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="CgV-kp-Z29" secondAttribute="trailing" id="cN8-pA-XIS"/>
+                    <constraint firstItem="B2n-FI-7bL" firstAttribute="top" secondItem="CgV-kp-Z29" secondAttribute="bottom" constant="8" id="dEg-91-43T"/>
+                    <constraint firstItem="vkG-5E-BRH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="dki-pL-CLX"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="mdm-mH-mKK" secondAttribute="trailing" constant="8" id="eFW-P3-kuf"/>
+                    <constraint firstItem="B2n-FI-7bL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="gA6-DN-VuL"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="vkG-5E-BRH" secondAttribute="trailing" constant="8" id="gbo-Cp-rfp"/>
+                    <constraint firstItem="nok-PX-qpB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="hDj-Bh-oJT"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="4Xw-ia-3I4" secondAttribute="trailing" constant="8" id="hIf-NU-qu6"/>
+                    <constraint firstItem="vkG-5E-BRH" firstAttribute="top" secondItem="B2n-FI-7bL" secondAttribute="bottom" constant="8" id="hqI-ii-yZ8"/>
+                    <constraint firstItem="CgV-kp-Z29" firstAttribute="top" secondItem="AqG-RW-WTR" secondAttribute="bottom" constant="5" id="iJE-xs-d2S"/>
+                    <constraint firstItem="ILL-CO-x3x" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="maY-B8-1NR"/>
+                    <constraint firstItem="3Za-hi-QfA" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="tGA-s7-Cf3"/>
+                    <constraint firstItem="4Xw-ia-3I4" firstAttribute="top" secondItem="nok-PX-qpB" secondAttribute="bottom" constant="8" id="uXO-Ng-Hg9"/>
+                    <constraint firstItem="4Xw-ia-3I4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="vfB-cf-JlK"/>
+                    <constraint firstItem="3Za-hi-QfA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="zB4-pl-Kmr"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="9yw-04-Dzl"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="clientHonor" destination="4Xw-ia-3I4" id="y2G-Mv-ce5"/>
+                <outlet property="complaintsButton" destination="3Za-hi-QfA" id="eeY-HJ-Zrn"/>
+                <outlet property="email" destination="AqG-RW-WTR" id="rTN-2z-i6a"/>
+                <outlet property="reservationDate" destination="nok-PX-qpB" id="2tm-s1-EwM"/>
+                <outlet property="reservationId" destination="ILL-CO-x3x" id="zY7-MY-fU5"/>
+                <outlet property="room" destination="B2n-FI-7bL" id="enD-cN-HAA"/>
+                <outlet property="roomDesc" destination="vkG-5E-BRH" id="Nty-HU-JI9"/>
+                <outlet property="roomOptions" destination="mdm-mH-mKK" id="d5T-Hp-Zj0"/>
+            </connections>
+            <point key="canvasLocation" x="13" y="214.5"/>
+        </tableViewCell>
+    </objects>
+</document>

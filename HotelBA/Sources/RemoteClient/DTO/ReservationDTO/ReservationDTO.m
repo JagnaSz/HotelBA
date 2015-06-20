@@ -17,12 +17,12 @@
 
     reservationDTO.additionalServices = dict[@"additionalServices"];
     reservationDTO.paid = [dict[@"paid"] boolValue];
-    reservationDTO.discountDTO = [DiscountDTO createDiscountWithDictionary:dict];
+    reservationDTO.discountDTO = [DiscountDTO createDiscountWithDictionary:dict[@"discountType"]];
     reservationDTO.endDate = dict[@"endDate"];
     reservationDTO.startDate = dict[@"startDate"];
-    reservationDTO.registrationDTO = [RegistrationDTO createAccountWithDicitonary:dict];
+    reservationDTO.registrationDTO = [RegistrationDTO createAccountWithDicitonary:dict[@"account"]];
     reservationDTO.reservationID = [dict[@"id"] integerValue];
-    reservationDTO.roomDTO = [RoomDTO createRoomWithDictionary:dict];
+    reservationDTO.roomDTO = [RoomDTO createRoomWithDictionary:dict[@"room"]];
 
     return  reservationDTO;
 

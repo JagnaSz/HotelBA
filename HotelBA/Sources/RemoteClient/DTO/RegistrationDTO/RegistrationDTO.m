@@ -19,8 +19,8 @@
     registrationDTO.firstName = request[@"firstName"];
     registrationDTO.lastName = request[@"lastName"];
     registrationDTO.birthDate = request[@"birthDate"];
-    registrationDTO.addressDTO = [AddressDTO createAddressWithDictionary:request];
-    registrationDTO.contactDTO = [ContactDTO createContactWithDictionary:request];
+    registrationDTO.addressDTO = [AddressDTO createAddressWithDictionary:request[@"address"]];
+    registrationDTO.contactDTO = [ContactDTO createContactWithDictionary:request[@"contact"]];
 
     return registrationDTO;
 }

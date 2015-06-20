@@ -13,7 +13,7 @@
 + (RoomDTO *)createRoomWithDictionary:(NSDictionary *)dict {
     RoomDTO *roomDTO = [[RoomDTO alloc] init];
     roomDTO.roomId = [dict[@"id"] integerValue];
-    roomDTO.roomTypeDTO = [RoomTypeDTO createRoomTypeWithDictionary:dict];
+    roomDTO.roomTypeDTO = [RoomTypeDTO createRoomTypeWithDictionary:dict[@"roomType"]];
     roomDTO.floor = [dict[@"floor"] integerValue];
     roomDTO.number = [dict[@"number"] integerValue];
     roomDTO.roomSize = [dict[@"size"] integerValue];

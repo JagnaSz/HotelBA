@@ -23,7 +23,7 @@
            params:nil success:^(NSDictionary *response) {
                 if(response != nil) {
                     HotelResponse *hotelResponse = [[HotelResponse alloc] init];
-                    NSArray *hotels = [self parseResponseWithDictionary:response];
+                    NSArray *hotels = [self parseHotelResponseWithDictionary:response];
 
                     hotelResponse.hotelsArray = hotels;
                     [delegate onGetAllHotelsSuccess:hotelResponse];
@@ -39,7 +39,7 @@
 
 }
 
-- (NSArray *)parseResponseWithDictionary:(NSDictionary *) dictionary {
+- (NSArray *)parseHotelResponseWithDictionary:(NSDictionary *) dictionary {
 
     HotelDTO *hotelDTO = [[HotelDTO alloc] init];
     NSArray *dictionaryArray = (NSArray *)dictionary;

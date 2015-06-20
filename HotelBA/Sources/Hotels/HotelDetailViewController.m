@@ -48,6 +48,7 @@
 - (void)eventReservationButton:(id)eventReservationButton {
 
     HotelReservationsViewController *hotelReservationsViewController = [[HotelReservationsViewController alloc] init];
+    hotelReservationsViewController.hotelId = self.hotelDTO.hotelId;
     [self.navigationController pushViewController:hotelReservationsViewController animated:YES];
 
 }
