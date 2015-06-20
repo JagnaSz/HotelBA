@@ -9,4 +9,12 @@
 @implementation ContactDTO {
 
 }
++ (ContactDTO *)createContactWithDictionary:(NSDictionary *)dict {
+
+    ContactDTO *contactDTO = [[ContactDTO alloc] init];
+    contactDTO.phone = dict[@"phone"];
+    contactDTO.mail =  dict[@"mail"];
+
+    return contactDTO;
+}
 @end

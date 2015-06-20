@@ -12,4 +12,6 @@
 @property (nonatomic, strong) NSString *mailPermission;
 @property (nonatomic, strong) NSString *smsPermission;
 @property (nonatomic, strong) NSString *faxPermission;
+
++ (ContactDTO *)createContactWithDictionary:(NSDictionary *)dictionary;
 @end

@@ -18,4 +18,6 @@
 @property (nonatomic, strong) AddressDTO *addressDTO;
 @property (nonatomic, strong) ContactDTO *contactDTO;
 @property (nonatomic, strong) NSString *regulaminAccepted;
+
++ (RegistrationDTO *)createAccountWithDicitonary:(NSDictionary *)request;
 @end

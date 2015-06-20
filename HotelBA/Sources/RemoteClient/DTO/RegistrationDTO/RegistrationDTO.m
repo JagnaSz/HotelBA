@@ -11,4 +11,20 @@
 @implementation RegistrationDTO {
 
 }
+
++ (RegistrationDTO *)createAccountWithDicitonary:(NSDictionary *)request {
+
+    RegistrationDTO *registrationDTO = [[RegistrationDTO alloc] init];
+    registrationDTO.password = request[@"password"];
+    registrationDTO.firstName = request[@"firstName"];
+    registrationDTO.lastName = request[@"lastName"];
+    registrationDTO.birthDate = request[@"birthDate"];
+    registrationDTO.addressDTO = [AddressDTO createAddressWithDictionary:request];
+    registrationDTO.contactDTO = [ContactDTO createContactWithDictionary:request];
+
+    return registrationDTO;
+}
+
+
+
 @end

@@ -4,9 +4,28 @@
 //
 
 #import "ReservationDTO.h"
+#import "RoomDTO.h"
+#import "RegistrationDTO.h"
+#import "DiscountDTO.h"
 
 
 @implementation ReservationDTO {
 
 }
++ (ReservationDTO *)createReservationWithDictionary:(NSDictionary *)dict {
+    ReservationDTO *reservationDTO = [[ReservationDTO alloc] init];
+
+    reservationDTO.additionalServices = dict[@"additionalServices"];
+    reservationDTO.paid = [dict[@"paid"] boolValue];
+    reservationDTO.discountDTO = [DiscountDTO createDiscountWithDictionary:dict];
+    reservationDTO.endDate = dict[@"endDate"];
+    reservationDTO.startDate = dict[@"startDate"];
+    reservationDTO.registrationDTO = [RegistrationDTO createAccountWithDicitonary:dict];
+    reservationDTO.reservationID = [dict[@"id"] integerValue];
+    reservationDTO.roomDTO = [RoomDTO createRoomWithDictionary:dict];
+
+    return  reservationDTO;
+
+}
+
 @end
