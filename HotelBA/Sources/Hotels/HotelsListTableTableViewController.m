@@ -64,11 +64,6 @@
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -96,7 +91,10 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     HotelTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"hotelCell" forIndexPath:indexPath];
     HotelDTO *hotelDTO = self.hotels[(NSUInteger) indexPath.row];
-    cell.hotelNameLabel.text = hotelDTO.hotelName;
+    if(hotelDTO.hotelName == nil)
+        cell.hotelNameLabel.text = @"Brak nazwy";
+    else
+        cell.hotelNameLabel.text = hotelDTO.hotelName;
     return cell;
 }
 

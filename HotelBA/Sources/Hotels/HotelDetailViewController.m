@@ -7,6 +7,7 @@
 #import "HotelDTO.h"
 #import "AddressDTO.h"
 #import "ContactDTO.h"
+#import "HotelReservationsViewController.h"
 
 @interface HotelDetailViewController()
 @property (weak, nonatomic) IBOutlet UILabel *name;
@@ -21,6 +22,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *country;
 @property (weak, nonatomic) IBOutlet UILabel *phone;
 @property (weak, nonatomic) IBOutlet UILabel *email;
+@property (weak, nonatomic) IBOutlet UIButton *reservationButton;
+
 
 @end
 
@@ -34,6 +37,19 @@
     self.view.backgroundColor = [UIColor colorWithRed:205/255.0 green:201/255.0 blue:194/255.0 alpha:1.0];
 
     [self setupView];
+    [self bindEvents];
+}
+
+- (void)bindEvents {
+    [self.reservationButton addTarget:self action:@selector(eventReservationButton:) forControlEvents:UIControlEventTouchUpInside];
+
+}
+
+- (void)eventReservationButton:(id)eventReservationButton {
+
+    HotelReservationsViewController *hotelReservationsViewController = [[HotelReservationsViewController alloc] init];
+    [self.navigationController pushViewController:hotelReservationsViewController animated:YES];
+
 }
 
 - (void)setupView {
