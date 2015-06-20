@@ -17,6 +17,8 @@
 
 @property(nonatomic, strong) NSDictionary *userAccount;
 -(NSString *) userHonor;
+
+- (NSString *)token;
 @end
 
 @protocol GetUserAccountDelegate <RemoteClientDelegate>

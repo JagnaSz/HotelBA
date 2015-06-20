@@ -18,4 +18,7 @@
     return [NSString stringWithFormat:@"%@ %@", [self.userAccount[@"account"] objectForKey:@"firstName"], [self.userAccount[@"account"] objectForKey:@"lastName"]];
 }
 
+- (NSString *) token {
+    return self.userAccount[@"token"];
+}
 @end

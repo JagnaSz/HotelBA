@@ -19,6 +19,7 @@
 #import "CenterViewController.h"
 #import "HotelNavigationController.h"
 #import "AboutViewController.h"
+#import "AccountTokenSingleton.h"
 
 @interface LoginViewController () <GetUserAccountDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
@@ -50,6 +51,7 @@
 }
 
 - (void)onGetUserAccountSuccess:(LoginResponse *)response {
+    [AccountTokenSingleton sharedManager].token = response.token;
     [self.updateMenuDelegate updateMenu:response.userHonor];
     [self loginSuccessAlert];
 }

@@ -9,14 +9,15 @@
 #import "HotelDTO.h"
 #import "AddressDTO.h"
 #import "ContactDTO.h"
+#import "AFHTTPRequestOperationManager.h"
+#import "AccountTokenSingleton.h"
 
 
 @implementation RemoteClient (Hotels)
 
 - (void)getAllHotelsWithDelegate:(id <GetAllHotelsDelegate>)delegate {
-
+    [self.httpClient.requestSerializer setValue:[AccountTokenSingleton sharedManager].token forHTTPHeaderField:@"Token-Auth"];
     NSString *path = @"hotel/hotels";
-
 
     [self getPath:path
            params:nil success:^(NSDictionary *response) {

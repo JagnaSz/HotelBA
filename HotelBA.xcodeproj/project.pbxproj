@@ -37,6 +37,7 @@
 		EE266504F8EEB0E141082C21 /* ReservationDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = EE26682E1F43FFA6405661B7 /* ReservationDTO.m */; };
 		EE26650E7ECF8EF4C458AF8C /* RoomDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266B545CD1093D8B81D06E /* RoomDTO.m */; };
 		EE26652A3C579E2D1521FD06 /* HotelDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266A054E0C9E2455BB9560 /* HotelDetailViewController.m */; };
+		EE266552B2332C28B2351635 /* AccountTokenSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = EE26648A89705282F0561CCA /* AccountTokenSingleton.m */; };
 		EE2665A875367002476A3C42 /* RemoteClient+Registration.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266064CB1253D652C10A7C /* RemoteClient+Registration.m */; };
 		EE2665EE94B4FED057E651E0 /* RemoteClient+Login.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266AC6E6803909E53ACF5D /* RemoteClient+Login.m */; };
 		EE2666044F51898979087863 /* HotelResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2668F545B900B9A2D126E9 /* HotelResponse.m */; };
@@ -116,6 +117,7 @@
 		EE2664478EF53ABC90D33D4C /* RoomTypeDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomTypeDTO.m; sourceTree = "<group>"; };
 		EE266470CF485B804E48879D /* HotelNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelNavigationController.m; sourceTree = "<group>"; };
 		EE26647B4979F413A296686F /* RoomDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomDTO.h; sourceTree = "<group>"; };
+		EE26648A89705282F0561CCA /* AccountTokenSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountTokenSingleton.m; sourceTree = "<group>"; };
 		EE2664F0FE14B6AE4C100610 /* RemoteClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteClient.h; sourceTree = "<group>"; };
 		EE2665281AAA5CA38368529C /* ReservationDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReservationDTO.h; sourceTree = "<group>"; };
 		EE2665A5FDA4B2299F017A8E /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 		EE2669E05589ACACE584D2B3 /* MenuOptionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuOptionModel.m; sourceTree = "<group>"; };
 		EE266A054E0C9E2455BB9560 /* HotelDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelDetailViewController.m; sourceTree = "<group>"; };
 		EE266A8A2105D7FC90314B39 /* ErrorResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorResponse.h; sourceTree = "<group>"; };
+		EE266A8C005C6DC39E0498DC /* AccountTokenSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountTokenSingleton.h; sourceTree = "<group>"; };
 		EE266AC6E6803909E53ACF5D /* RemoteClient+Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RemoteClient+Login.m"; sourceTree = "<group>"; };
 		EE266AE72EAC4D37BE310576 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		EE266AFD87F5570E364874D1 /* RegistrationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistrationRequest.m; sourceTree = "<group>"; };
@@ -358,6 +361,8 @@
 			children = (
 				EE266AC6E6803909E53ACF5D /* RemoteClient+Login.m */,
 				EE266D3AB6C21D1A5E63AE92 /* RemoteClient+Login.h */,
+				EE26648A89705282F0561CCA /* AccountTokenSingleton.m */,
+				EE266A8C005C6DC39E0498DC /* AccountTokenSingleton.h */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -807,6 +812,7 @@
 				EE26650E7ECF8EF4C458AF8C /* RoomDTO.m in Sources */,
 				EE266A2BDB61762B8B29FE92 /* DiscountDTO.m in Sources */,
 				EE266E1B3AE10215679A8704 /* RoomTypeDTO.m in Sources */,
+				EE266552B2332C28B2351635 /* AccountTokenSingleton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
