@@ -28,6 +28,10 @@
 		725D49C11B0E76C6005D4AF9 /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 725D49BF1B0E76C6005D4AF9 /* MenuTableViewCell.xib */; };
 		72AE7FFF1B36089A00E539A8 /* HotelsReservationsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72AE7FFD1B36089A00E539A8 /* HotelsReservationsTableViewCell.m */; };
 		72AE80001B36089A00E539A8 /* HotelsReservationsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72AE7FFE1B36089A00E539A8 /* HotelsReservationsTableViewCell.xib */; };
+		72C361EF1B36DA6A00AE2998 /* NewComplaintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C361ED1B36DA6A00AE2998 /* NewComplaintViewController.m */; };
+		72C361F01B36DA6A00AE2998 /* NewComplaintViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72C361EE1B36DA6A00AE2998 /* NewComplaintViewController.xib */; };
+		72C361F21B36EAC800AE2998 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C361F11B36EAC800AE2998 /* MessageUI.framework */; };
+		EE2660566BC70DC85C6EA7E2 /* RemoteClient+Complaint.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266C6EED5F273762F4ECA8 /* RemoteClient+Complaint.m */; };
 		EE266056D1A3A322FE7BAF87 /* ContactDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266903FF7B8D8FEE32BBE3 /* ContactDTO.m */; };
 		EE26615018FA9BA3B7DC3AB7 /* HotelReservationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2666DAEEE53433520E0B25 /* HotelReservationsViewController.m */; };
 		EE2661545348C58C99D0963D /* AddressDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266005D7863E267698414F /* AddressDTO.m */; };
@@ -38,6 +42,7 @@
 		EE2664BF532601940B456E25 /* MenuOptionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2669E05589ACACE584D2B3 /* MenuOptionModel.m */; };
 		EE2664F10FDD5A016DA1B891 /* ErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2660AFF1B9C4A002224179 /* ErrorResponse.m */; };
 		EE266504F8EEB0E141082C21 /* ReservationDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = EE26682E1F43FFA6405661B7 /* ReservationDTO.m */; };
+		EE2665062BF81FE7132C8983 /* ComplaintDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2669DBAD19A79045E6D63D /* ComplaintDTO.m */; };
 		EE26650E7ECF8EF4C458AF8C /* RoomDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266B545CD1093D8B81D06E /* RoomDTO.m */; };
 		EE26652A3C579E2D1521FD06 /* HotelDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266A054E0C9E2455BB9560 /* HotelDetailViewController.m */; };
 		EE266552B2332C28B2351635 /* AccountTokenSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = EE26648A89705282F0561CCA /* AccountTokenSingleton.m */; };
@@ -47,6 +52,7 @@
 		EE266610B7A487357ADA32A9 /* LoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2663240A72541D9288BC19 /* LoginRequest.m */; };
 		EE2666188E7570B75D1F6201 /* RegistrationDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = EE26681EE95027FE283BD553 /* RegistrationDTO.m */; };
 		EE266632684610079C561D6D /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266E3CA4F85DD9AA99C83F /* AboutViewController.m */; };
+		EE2666DBB1AB5CF5B53DEA59 /* ComplaintRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266AEAB375B1284A899203 /* ComplaintRequest.m */; };
 		EE2668E796A4796BBFB0BEF3 /* HotelDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = EE26680584182967FE755104 /* HotelDTO.m */; };
 		EE26693960916813EF83FE5A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266E231D686016B967FB13 /* ViewController.m */; };
 		EE266977BA8B0DC23509C569 /* ReservationsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266A9E16DC4E6BD417BF60 /* ReservationsRequest.m */; };
@@ -108,6 +114,10 @@
 		72AE7FFC1B36089A00E539A8 /* HotelsReservationsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelsReservationsTableViewCell.h; sourceTree = "<group>"; };
 		72AE7FFD1B36089A00E539A8 /* HotelsReservationsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelsReservationsTableViewCell.m; sourceTree = "<group>"; };
 		72AE7FFE1B36089A00E539A8 /* HotelsReservationsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotelsReservationsTableViewCell.xib; sourceTree = "<group>"; };
+		72C361EC1B36DA6A00AE2998 /* NewComplaintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewComplaintViewController.h; sourceTree = "<group>"; };
+		72C361ED1B36DA6A00AE2998 /* NewComplaintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewComplaintViewController.m; sourceTree = "<group>"; };
+		72C361EE1B36DA6A00AE2998 /* NewComplaintViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewComplaintViewController.xib; sourceTree = "<group>"; };
+		72C361F11B36EAC800AE2998 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		D980AE08CB052A597CE12C7F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		EE266005D7863E267698414F /* AddressDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressDTO.m; sourceTree = "<group>"; };
 		EE26600C0840B9CA0727617B /* MenuTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewDelegate.m; sourceTree = "<group>"; };
@@ -120,6 +130,7 @@
 		EE2661D0621E7BA33273605C /* RegistrationDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationDTO.h; sourceTree = "<group>"; };
 		EE2663240A72541D9288BC19 /* LoginRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginRequest.m; sourceTree = "<group>"; };
 		EE26634598D372D0A112D4E2 /* RemoteClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteClient.m; sourceTree = "<group>"; };
+		EE2663FACAA7988143BD9AE0 /* RemoteClient+Complaint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RemoteClient+Complaint.h"; sourceTree = "<group>"; };
 		EE2664478EF53ABC90D33D4C /* RoomTypeDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomTypeDTO.m; sourceTree = "<group>"; };
 		EE266470CF485B804E48879D /* HotelNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelNavigationController.m; sourceTree = "<group>"; };
 		EE26647B4979F413A296686F /* RoomDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomDTO.h; sourceTree = "<group>"; };
@@ -144,6 +155,7 @@
 		EE266863B2CB08B5893D1AA9 /* AddressDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressDTO.h; sourceTree = "<group>"; };
 		EE2668F545B900B9A2D126E9 /* HotelResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelResponse.m; sourceTree = "<group>"; };
 		EE266903FF7B8D8FEE32BBE3 /* ContactDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactDTO.m; sourceTree = "<group>"; };
+		EE2669DBAD19A79045E6D63D /* ComplaintDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComplaintDTO.m; sourceTree = "<group>"; };
 		EE2669E05589ACACE584D2B3 /* MenuOptionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuOptionModel.m; sourceTree = "<group>"; };
 		EE266A054E0C9E2455BB9560 /* HotelDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelDetailViewController.m; sourceTree = "<group>"; };
 		EE266A8A2105D7FC90314B39 /* ErrorResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorResponse.h; sourceTree = "<group>"; };
@@ -151,22 +163,26 @@
 		EE266A9E16DC4E6BD417BF60 /* ReservationsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReservationsRequest.m; sourceTree = "<group>"; };
 		EE266AC6E6803909E53ACF5D /* RemoteClient+Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RemoteClient+Login.m"; sourceTree = "<group>"; };
 		EE266AE72EAC4D37BE310576 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		EE266AEAB375B1284A899203 /* ComplaintRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComplaintRequest.m; sourceTree = "<group>"; };
 		EE266AFD87F5570E364874D1 /* RegistrationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistrationRequest.m; sourceTree = "<group>"; };
 		EE266B545CD1093D8B81D06E /* RoomDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomDTO.m; sourceTree = "<group>"; };
 		EE266B6A2083064C8107E632 /* RoomTypeDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomTypeDTO.h; sourceTree = "<group>"; };
 		EE266BAF0E2C3CDE331CB6BF /* ReservationsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReservationsRequest.h; sourceTree = "<group>"; };
 		EE266BBE581A74FBAAF4435D /* UIImage+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Helper.h"; sourceTree = "<group>"; };
+		EE266C6EED5F273762F4ECA8 /* RemoteClient+Complaint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RemoteClient+Complaint.m"; sourceTree = "<group>"; };
 		EE266C8E36B715DC85A7D181 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		EE266CABAC68840CAE1ECF28 /* RemoteClient+Registration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RemoteClient+Registration.h"; sourceTree = "<group>"; };
 		EE266CB837BF00F86AB2D9ED /* HotelNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelNavigationController.h; sourceTree = "<group>"; };
 		EE266D21E402C727EF404B0B /* DiscountDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscountDTO.m; sourceTree = "<group>"; };
 		EE266D2E9F402EAE7EA5A7A3 /* RemoteClientDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteClientDelegate.h; sourceTree = "<group>"; };
 		EE266D3AB6C21D1A5E63AE92 /* RemoteClient+Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RemoteClient+Login.h"; sourceTree = "<group>"; };
+		EE266DB44F4762BEE5E1C3F3 /* ComplaintRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComplaintRequest.h; sourceTree = "<group>"; };
 		EE266DC84012E3B743692D8E /* RemoteClient+Hotels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RemoteClient+Hotels.m"; sourceTree = "<group>"; };
 		EE266E231D686016B967FB13 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EE266E3B0804D83E315273E1 /* RemoteClient+Hotels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RemoteClient+Hotels.h"; sourceTree = "<group>"; };
 		EE266E3CA4F85DD9AA99C83F /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		EE266EFD41520940FF32E273 /* LoginRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginRequest.h; sourceTree = "<group>"; };
+		EE266F1FE8D4B0FEFE9A714D /* ComplaintDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComplaintDTO.h; sourceTree = "<group>"; };
 		EE266F29051107194DFC5C43 /* HotelDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelDTO.h; sourceTree = "<group>"; };
 		EE266FF6D167C7B8B16B3791 /* DiscountDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscountDTO.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -176,6 +192,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72C361F21B36EAC800AE2998 /* MessageUI.framework in Frameworks */,
 				179FB09D3BAD753102573302 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +279,7 @@
 		DB7B63EB872178B35D4891C0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				72C361F11B36EAC800AE2998 /* MessageUI.framework */,
 				36BAF4F444EFB7194B86462A /* libPods.a */,
 			);
 			name = Frameworks;
@@ -349,6 +367,15 @@
 			path = HotelDTO;
 			sourceTree = "<group>";
 		};
+		EE2662BA90EAC3D759666E78 /* Complaint */ = {
+			isa = PBXGroup;
+			children = (
+				EE266AEAB375B1284A899203 /* ComplaintRequest.m */,
+				EE266DB44F4762BEE5E1C3F3 /* ComplaintRequest.h */,
+			);
+			path = Complaint;
+			sourceTree = "<group>";
+		};
 		EE2662FF0216203E3DFC09B2 /* Registration */ = {
 			isa = PBXGroup;
 			children = (
@@ -356,6 +383,16 @@
 				EE26665018FBC40A476A0AEF /* RegistrationRequest.h */,
 			);
 			path = Registration;
+			sourceTree = "<group>";
+		};
+		EE26639BB8671CC694095E6D /* Complaints */ = {
+			isa = PBXGroup;
+			children = (
+				72C361EC1B36DA6A00AE2998 /* NewComplaintViewController.h */,
+				72C361ED1B36DA6A00AE2998 /* NewComplaintViewController.m */,
+				72C361EE1B36DA6A00AE2998 /* NewComplaintViewController.xib */,
+			);
+			path = Complaints;
 			sourceTree = "<group>";
 		};
 		EE26646F31362D1BC8A47361 /* RegistrationDTO */ = {
@@ -450,6 +487,7 @@
 				EE26694B7B187AE0E16A8B76 /* RoomDTO */,
 				EE266C665217E6C45EBA1384 /* DiscountDTO */,
 				EE266F618E571301FD4238B3 /* RoomTypeDTO */,
+				EE266A22167C9A508B84C389 /* ComplaintDTO */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -469,6 +507,15 @@
 				EE2660384813FE2090CBE1AE /* RemoteClient+Reservations.h */,
 			);
 			path = Reservations;
+			sourceTree = "<group>";
+		};
+		EE26680B0618C7850DD1412D /* Complaint */ = {
+			isa = PBXGroup;
+			children = (
+				EE266C6EED5F273762F4ECA8 /* RemoteClient+Complaint.m */,
+				EE2663FACAA7988143BD9AE0 /* RemoteClient+Complaint.h */,
+			);
+			path = Complaint;
 			sourceTree = "<group>";
 		};
 		EE26685D6F1E6DBF41FA4581 /* AddressDTO */ = {
@@ -507,6 +554,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		EE266A22167C9A508B84C389 /* ComplaintDTO */ = {
+			isa = PBXGroup;
+			children = (
+				EE2669DBAD19A79045E6D63D /* ComplaintDTO.m */,
+				EE266F1FE8D4B0FEFE9A714D /* ComplaintDTO.h */,
+			);
+			path = ComplaintDTO;
+			sourceTree = "<group>";
+		};
 		EE266A4BC7460BCC5547C596 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -523,6 +579,7 @@
 				EE266683C899254B36963415 /* Registration */,
 				EE266BAD4AD0D73176A0379F /* Hotels */,
 				EE2667F3A49A72A4DDD13CE4 /* Reservations */,
+				EE26680B0618C7850DD1412D /* Complaint */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -610,6 +667,7 @@
 				EE26662F91C7A7CCE5B3450F /* Login */,
 				EE26607665189775E9C3913F /* Hotels */,
 				EE2661A58108B717E2004C19 /* Reservaitons */,
+				EE2662BA90EAC3D759666E78 /* Complaint */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -671,6 +729,7 @@
 				EE266504E110733803864939 /* RemoteClient */,
 				EE266C454EFF60422E9369DC /* Hotels */,
 				EE266EA4A1E1CF9F31DF9F03 /* Reservations */,
+				EE26639BB8671CC694095E6D /* Complaints */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -790,6 +849,7 @@
 				72AE80001B36089A00E539A8 /* HotelsReservationsTableViewCell.xib in Resources */,
 				725D49C11B0E76C6005D4AF9 /* MenuTableViewCell.xib in Resources */,
 				7216B76A1B0E41C50065B180 /* Images.xcassets in Resources */,
+				72C361F01B36DA6A00AE2998 /* NewComplaintViewController.xib in Resources */,
 				725A53CB1B207CB6008F3A7F /* LoginViewController.xib in Resources */,
 				EE2669E02778B8EF3C41D830 /* RegisterViewController.xib in Resources */,
 			);
@@ -855,6 +915,7 @@
 				725A53CE1B208403008F3A7F /* BaseViewController.m in Sources */,
 				EE266FAB174B7FBF05307FDA /* MenuTableDataSource.m in Sources */,
 				EE2664BF532601940B456E25 /* MenuOptionModel.m in Sources */,
+				72C361EF1B36DA6A00AE2998 /* NewComplaintViewController.m in Sources */,
 				EE26618792B5E733E050ADBB /* MenuTableViewDelegate.m in Sources */,
 				EE26623887872FC6CE807C34 /* HotelNavigationController.m in Sources */,
 				EE2661E6EAF395BE41A30ACE /* RegisterViewController.m in Sources */,
@@ -883,6 +944,9 @@
 				EE26633BA1A055A2ADDD3BF1 /* RemoteClient+Hotels.m in Sources */,
 				EE266A5D08824BF6F9765E18 /* RemoteClient+Reservations.m in Sources */,
 				EE266977BA8B0DC23509C569 /* ReservationsRequest.m in Sources */,
+				EE2665062BF81FE7132C8983 /* ComplaintDTO.m in Sources */,
+				EE2666DBB1AB5CF5B53DEA59 /* ComplaintRequest.m in Sources */,
+				EE2660566BC70DC85C6EA7E2 /* RemoteClient+Complaint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

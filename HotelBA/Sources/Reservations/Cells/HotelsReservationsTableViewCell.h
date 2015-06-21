@@ -9,9 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @class ReservationDTO;
+@protocol ReservationComplaintPressedProtocol;
 
 @interface HotelsReservationsTableViewCell : UITableViewCell
 
+@property (nonatomic, strong) id<ReservationComplaintPressedProtocol> cellDelegate;
+
+@property(nonatomic, strong) NSString *emailText;
 
 - (void)setupView:(ReservationDTO *)reservation;
 @end

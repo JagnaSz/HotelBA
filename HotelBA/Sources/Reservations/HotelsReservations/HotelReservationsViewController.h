@@ -7,7 +7,16 @@
 #import "UIKit/UIKit.h"
 #import "ReservationsRequest.h"
 
-@interface HotelReservationsViewController : UITableViewController <GetAllReservationsById, UIGestureRecognizerDelegate, DeleteReservationsById>
+@protocol ReservationComplaintPressedProtocol;
+@class NewComplaintViewController;
+
+@interface HotelReservationsViewController : UITableViewController <GetAllReservationsById, UIGestureRecognizerDelegate, DeleteReservationsById, ReservationComplaintPressedProtocol>
 @property (nonatomic, assign) NSInteger hotelId;
 @property(nonatomic, strong) NSArray *reservationDetail;
+@end
+
+@protocol ReservationComplaintPressedProtocol <NSObject>
+
+- (void)pushComplaintViewController:(NewComplaintViewController *) complaintsViewController;
+
 @end

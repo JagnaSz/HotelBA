@@ -13,6 +13,7 @@
 #import "RemoteClient+Reservations.h"
 #import "ErrorResponse.h"
 #import "ReservationDTO.h"
+#import "NewComplaintViewController.h"
 
 @interface HotelReservationsViewController()
     @property (nonatomic, strong) RemoteClient *remoteClient;
@@ -51,6 +52,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     HotelsReservationsTableViewCell *tableViewCell = [tableView dequeueReusableCellWithIdentifier:@"hotelsReservationsCell" forIndexPath:indexPath];
+    tableViewCell.cellDelegate = self;
     [tableViewCell setupView:self.reservationDetail[(NSUInteger) indexPath.row]];
     return tableViewCell;
 }
@@ -119,6 +121,12 @@
 
 - (void)onDeleteReservationByIdSuccess {
     NSLog(@"Success in deleting reservaiton");
+
+}
+
+- (void)pushComplaintViewController:(NewComplaintViewController *)complaintsViewController {
+
+    [self.navigationController pushViewController:complaintsViewController animated:YES];
 
 }
 

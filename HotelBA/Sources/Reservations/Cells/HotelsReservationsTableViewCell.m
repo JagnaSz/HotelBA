@@ -12,6 +12,8 @@
 #import "ContactDTO.h"
 #import "RoomDTO.h"
 #import "RoomTypeDTO.h"
+#import "HotelReservationsViewController.h"
+#import "NewComplaintViewController.h"
 
 @interface HotelsReservationsTableViewCell()
 @property (weak, nonatomic) IBOutlet UILabel *reservationId;
@@ -22,7 +24,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *roomDesc;
 @property (weak, nonatomic) IBOutlet UILabel *roomOptions;
 @property (weak, nonatomic) IBOutlet UIButton *complaintsButton;
-
+@property (nonatomic, strong) NSString *resId;
 @end
 
 @implementation HotelsReservationsTableViewCell
@@ -37,8 +39,10 @@
 }
 
 - (void)onComplaintButtonPressed:(id)onComplaintButtonPressed {
-    NSLog(@"COMPLAINT");
-
+    NewComplaintViewController *complaintsViewController = [[NewComplaintViewController alloc] init];
+    complaintsViewController.reservationId = self.resId;
+    complaintsViewController.email = self.emailText;
+    [self.cellDelegate pushComplaintViewController:complaintsViewController];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -47,6 +51,8 @@
 }
 
 - (void)setupView:(ReservationDTO *)reservation {
+    self.resId = [NSString stringWithFormat:@"%@", @(reservation.reservationID)];
+    self.emailText = reservation.registrationDTO.contactDTO.mail;
     self.reservationId.text = [NSString stringWithFormat: @"id: %d",reservation.reservationID];
     self.reservationDate.text = [NSString stringWithFormat:@"From: %@ to %@", [self createDateFromString:reservation.startDate], [self createDateFromString:reservation.endDate]];
     self.clientHonor.text = [NSString stringWithFormat:@"Client honor: %@ %@", reservation.registrationDTO.firstName,reservation.registrationDTO.lastName];
