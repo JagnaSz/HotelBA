@@ -9,10 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @protocol UpdateMenuTableViewProtocol;
+@class ReservationDTO;
+@class RegistrationDTO;
 
 @interface LoginViewController : UIViewController
 
 @property (nonatomic, weak) id<UpdateMenuTableViewProtocol> updateMenuDelegate;
+
+@property(nonatomic, strong) RegistrationDTO *userAccount;
 
 - (void)showCenterScreen;
 @end

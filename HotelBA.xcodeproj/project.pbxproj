@@ -31,6 +31,7 @@
 		72C361EF1B36DA6A00AE2998 /* NewComplaintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C361ED1B36DA6A00AE2998 /* NewComplaintViewController.m */; };
 		72C361F01B36DA6A00AE2998 /* NewComplaintViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72C361EE1B36DA6A00AE2998 /* NewComplaintViewController.xib */; };
 		72C361F21B36EAC800AE2998 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C361F11B36EAC800AE2998 /* MessageUI.framework */; };
+		72C361F51B36FB8900AE2998 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C361F41B36FB8900AE2998 /* ProfileViewController.m */; };
 		EE2660566BC70DC85C6EA7E2 /* RemoteClient+Complaint.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266C6EED5F273762F4ECA8 /* RemoteClient+Complaint.m */; };
 		EE266056D1A3A322FE7BAF87 /* ContactDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = EE266903FF7B8D8FEE32BBE3 /* ContactDTO.m */; };
 		EE26615018FA9BA3B7DC3AB7 /* HotelReservationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2666DAEEE53433520E0B25 /* HotelReservationsViewController.m */; };
@@ -118,6 +119,8 @@
 		72C361ED1B36DA6A00AE2998 /* NewComplaintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewComplaintViewController.m; sourceTree = "<group>"; };
 		72C361EE1B36DA6A00AE2998 /* NewComplaintViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewComplaintViewController.xib; sourceTree = "<group>"; };
 		72C361F11B36EAC800AE2998 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		72C361F31B36FB8900AE2998 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		72C361F41B36FB8900AE2998 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		D980AE08CB052A597CE12C7F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		EE266005D7863E267698414F /* AddressDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressDTO.m; sourceTree = "<group>"; };
 		EE26600C0840B9CA0727617B /* MenuTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewDelegate.m; sourceTree = "<group>"; };
@@ -713,6 +716,15 @@
 			path = Register;
 			sourceTree = "<group>";
 		};
+		EE266EDB65378C73E0E1AC28 /* ProfileViewController */ = {
+			isa = PBXGroup;
+			children = (
+				72C361F31B36FB8900AE2998 /* ProfileViewController.h */,
+				72C361F41B36FB8900AE2998 /* ProfileViewController.m */,
+			);
+			path = ProfileViewController;
+			sourceTree = "<group>";
+		};
 		EE266F5A61B68A1B9AF5E196 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -730,6 +742,7 @@
 				EE266C454EFF60422E9369DC /* Hotels */,
 				EE266EA4A1E1CF9F31DF9F03 /* Reservations */,
 				EE26639BB8671CC694095E6D /* Complaints */,
+				EE266EDB65378C73E0E1AC28 /* ProfileViewController */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -932,6 +945,7 @@
 				72AE7FFF1B36089A00E539A8 /* HotelsReservationsTableViewCell.m in Sources */,
 				EE266610B7A487357ADA32A9 /* LoginRequest.m in Sources */,
 				72236EE41B349E3100190B24 /* HotelsListTableTableViewController.m in Sources */,
+				72C361F51B36FB8900AE2998 /* ProfileViewController.m in Sources */,
 				EE2668E796A4796BBFB0BEF3 /* HotelDTO.m in Sources */,
 				EE2666044F51898979087863 /* HotelResponse.m in Sources */,
 				EE26652A3C579E2D1521FD06 /* HotelDetailViewController.m in Sources */,

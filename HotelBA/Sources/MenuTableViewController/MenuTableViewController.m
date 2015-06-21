@@ -94,7 +94,10 @@
 }
 
 - (void)createAccountScreen {
-
+    UIViewController *profileController = [self.storyboard instantiateViewControllerWithIdentifier:@"profile"];
+    self.hotelNavigationController.viewControllers = @[profileController];
+    self.frostedViewController.contentViewController = self.hotelNavigationController;
+    [self.frostedViewController hideMenuViewController];
 }
 
 - (void)createTrunkScreen {

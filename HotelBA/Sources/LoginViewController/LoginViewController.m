@@ -11,6 +11,8 @@
 #import "MenuTableViewController.h"
 #import "LoginViewController.h"
 #import "LoginRequest.h"
+#import "ReservationDTO.h"
+#import "RegistrationDTO.h"
 #import "ErrorResponse.h"
 #import "RemoteClient.h"
 #import "RemoteClient+Login.h"
@@ -20,6 +22,9 @@
 #import "HotelNavigationController.h"
 #import "AboutViewController.h"
 #import "AccountTokenSingleton.h"
+#import "ReservationDTO.h"
+#import "ProfileViewController.h"
+#import "RegistrationDTO.h"
 
 @interface LoginViewController () <GetUserAccountDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
@@ -53,6 +58,7 @@
 - (void)onGetUserAccountSuccess:(LoginResponse *)response {
     [AccountTokenSingleton sharedManager].token = response.token;
     [self.updateMenuDelegate updateMenu:response.userHonor];
+    self.userAccount = [RegistrationDTO createAccountWithDicitonary:response.userAccount[@"account"]];
     [self loginSuccessAlert];
 }
 
@@ -67,11 +73,9 @@
 }
 
 - (void)showCenterScreen {
-    HotelNavigationController *hotelNavigationController = [self.frostedViewController.storyboard instantiateViewControllerWithIdentifier:@"centerController"];
-    AboutViewController *aboutViewController = [self.frostedViewController.storyboard instantiateViewControllerWithIdentifier:@"aboutScreen"];
-//    hotelNavigationController.viewControllers = @[aboutViewController];
-//    self.frostedViewController.contentViewController = hotelNavigationController;
-    [self.navigationController pushViewController:aboutViewController animated:YES];
+    ProfileViewController *profileViewController = [self.frostedViewController.storyboard instantiateViewControllerWithIdentifier:@"profile"];
+    [ProfileSingleton sharedManager].profile = self.userAccount;
+    [self.navigationController pushViewController:profileViewController animated:YES];
 
 }
 
