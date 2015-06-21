@@ -30,7 +30,7 @@
 - (void)setupView {
 
     self.name.text = [NSString stringWithFormat:@"Name: %@ %@", self.profile.firstName, self.profile.lastName];
-    self.birthDate.text = [NSString stringWithFormat:@"Birth date: %@", [self getBirthdate:self.profile.birthDate]];
+    self.birthDate.text = [NSString stringWithFormat:@"Birth date: %@",self.profile.birthDate];
 
     self.address.text = [NSString stringWithFormat:@"%@ %@, %@ %@", self.profile.addressDTO.street, self.profile.addressDTO.houseNumber,
     [self getPostalCode:self.profile.addressDTO.postalCode], self.profile.addressDTO.city];
@@ -48,27 +48,12 @@
     return [NSString stringWithFormat:@"%@-%@", firstPart, secondPart];
 
 }
-- (NSString *)getBirthdate:(NSString *)date {
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"DD-MM-yyyy"];
-
-    NSTimeInterval timeInterval = [date doubleValue];
-    NSDate *d = [NSDate dateWithTimeIntervalSince1970:timeInterval];
-
-    return [formatter stringFromDate:d];
-}
-
 
 - (void)bindEvents {
     [super bindEvents];
 }
 
 @end
-
-
-
-
-
 
 
 @implementation ProfileSingleton {

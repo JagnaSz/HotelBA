@@ -100,12 +100,15 @@
 
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setLocale:[NSLocale localeWithLocaleIdentifier:@""]];
-    [formatter setDateFormat:@"DD/MM/rrrr"];
+    [formatter setDateFormat:@"dd/MM/rrrr"];
 
     NSDate *date = [formatter dateFromString:self.birthTextField.text];
-    NSTimeInterval timeInterval = [date timeIntervalSince1970];
 
-    return [NSString stringWithFormat:@"%ld", (long) timeInterval];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"rrrr-MM-dd"];
+  //  NSTimeInterval timeInterval = [date timeIntervalSince1970];
+
+    return [dateFormatter stringFromDate:date];
 
 }
 
@@ -250,10 +253,10 @@
     NSLog(response);
     UIAlertView *alertView = [UIAlertView alertWithTitle:@"Registration success!" message: @"Registration has ended with success"];
     [alertView addButtonWithTitle:@"OK" handler:nil];
-    __weak RegisterViewController *weakSelf = self;
-    [alertView addButtonWithTitle:@"Log in" handler: ^{
-        [weakSelf showLoginScreen];
-    }];
+//    __weak RegisterViewController *weakSelf = self;
+//    [alertView addButtonWithTitle:@"Log in" handler: ^{
+//        [weakSelf showLoginScreen];
+//    }];
 
     [alertView show];
 }

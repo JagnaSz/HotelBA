@@ -67,7 +67,7 @@
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"dd-MM-yyyy"];
 
-    NSTimeInterval timeInterval = [date doubleValue];
+    NSTimeInterval timeInterval = [date doubleValue]/1000;
     NSDate *d = [NSDate dateWithTimeIntervalSince1970:timeInterval];
 
     return [formatter stringFromDate:d];
