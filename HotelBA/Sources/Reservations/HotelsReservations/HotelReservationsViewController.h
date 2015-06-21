@@ -7,7 +7,7 @@
 #import "UIKit/UIKit.h"
 #import "ReservationsRequest.h"
 
-@interface HotelReservationsViewController : UITableViewController <GetAllReservationsById>
+@interface HotelReservationsViewController : UITableViewController <GetAllReservationsById, UIGestureRecognizerDelegate>
 @property (nonatomic, assign) NSInteger hotelId;
 @property(nonatomic, strong) NSArray *reservationDetail;
 @end

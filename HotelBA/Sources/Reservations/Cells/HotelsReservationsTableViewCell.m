@@ -28,7 +28,17 @@
 @implementation HotelsReservationsTableViewCell
 
 - (void)awakeFromNib {
-    // Initialization code
+    [self bindEvents];
+}
+
+- (void)bindEvents {
+    [self.complaintsButton addTarget:self action:@selector(onComplaintButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+
+}
+
+- (void)onComplaintButtonPressed:(id)onComplaintButtonPressed {
+    NSLog(@"COMPLAINT");
+
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
