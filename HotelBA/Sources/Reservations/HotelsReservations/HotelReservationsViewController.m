@@ -12,7 +12,11 @@
 #import "ReservationsRequest.h"
 #import "RemoteClient+Reservations.h"
 #import "ErrorResponse.h"
+#import "ReservationDTO.h"
 
+@interface HotelReservationsViewController()
+    @property (nonatomic, strong) RemoteClient *remoteClient;
+@end
 
 @implementation HotelReservationsViewController {
 
@@ -37,10 +41,10 @@
     self.tableView.allowsMultipleSelectionDuringEditing = NO;
     [self.tableView setEditing:YES animated:YES];
 
-    RemoteClient *remoteClient = [[RemoteClient alloc] init];
+    self.remoteClient = [[RemoteClient alloc] init];
     ReservationsRequest *request = [[ReservationsRequest alloc] init];
     request.reservationId = [NSString stringWithFormat:@"%d",self.hotelId];
-    [remoteClient getReservationsWithRequest:request withDelegate:self];
+    [self.remoteClient getReservationsWithRequest:request withDelegate:self];
 
 }
 
@@ -81,10 +85,17 @@
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
+        ReservationDTO *reservationDTO = self.reservationDetail[(NSUInteger) indexPath.row];
+        ReservationsRequest *request = [[ReservationsRequest alloc] init];
+        request.reservationId = [NSString stringWithFormat:@"%@", @(reservationDTO.reservationID)];
+
         NSMutableArray *mutableArray = [NSMutableArray arrayWithArray:self.reservationDetail];
         [mutableArray removeObjectAtIndex:(NSUInteger) indexPath.row];
         self.reservationDetail = [NSArray arrayWithArray:mutableArray];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+
+        [self.remoteClient deleteReservationWithId:request withDelegate:self];
+
     } else {
         NSLog(@"Unhandled editing style! %d", editingStyle);
     }
@@ -96,7 +107,7 @@
 }
 
 - (void)onGetAllReservationsByIdSuccess:(ReservationResponse *)response {
-    self.reservationDetail = response.reservationsArrray;
+    self.reservationDetail = response.reservationsArray;
     [self.tableView reloadData];
 }
 
@@ -104,6 +115,11 @@
     UIAlertView *alertView = [UIAlertView alertWithTitle:@"Error" message:error.description];
     [alertView addButtonWithTitle:@"OK"];
     [alertView show];
+}
+
+- (void)onDeleteReservationByIdSuccess {
+    NSLog(@"Success in deleting reservaiton");
+
 }
 
 

@@ -13,12 +13,18 @@
 
 @interface ReservationResponse : NSObject
 
-@property(nonatomic, strong) NSArray *reservationsArrray;
+@property(nonatomic, strong) NSArray *reservationsArray;
 
 @end
 
 @protocol GetAllReservationsById <RemoteClientDelegate>
 
 - (void)onGetAllReservationsByIdSuccess:(ReservationResponse *)response;
+
+@end
+
+@protocol DeleteReservationsById <RemoteClientDelegate>
+
+- (void)onDeleteReservationByIdSuccess;
 
 @end

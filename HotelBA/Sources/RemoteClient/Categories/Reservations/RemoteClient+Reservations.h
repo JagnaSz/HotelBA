@@ -8,8 +8,11 @@
 
 @class ReservationsRequest;
 @protocol GetAllReservationsById;
+@protocol DeleteReservationsById;
 
 @interface RemoteClient (Reservations)
+- (void)deleteReservationWithId:(ReservationsRequest *)request withDelegate:(id <DeleteReservationsById>)delegate;
+
 - (void)getReservationsWithRequest:(ReservationsRequest *)request withDelegate:(id <GetAllReservationsById>)delegate;
 
 @end

@@ -50,6 +50,19 @@
 
 }
 
+- (void)deletePath:(NSString *) path params:(NSDictionary *)params success:(void (^)(NSDictionary *response))successBlock  andDelegate:(id <RemoteClientDelegate>)delegate {
+
+    [self.httpClient DELETE:path parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        successBlock(responseObject);
+
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+
+        ErrorResponse *response = [ErrorResponse responseWithError:error];
+        [delegate onRemoteClientError:response];
+    }];
+
+}
+
 - (void)postPath:(NSString *)path  params:(NSDictionary *)params success:(void (^)(NSDictionary *response))successBlock   andDelegate:(id <RemoteClientDelegate>)delegate {
 
     [self.httpClient POST:path parameters:params success:^void(AFHTTPRequestOperation *operation, id result) {

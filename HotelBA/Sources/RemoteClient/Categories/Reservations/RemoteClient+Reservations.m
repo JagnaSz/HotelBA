@@ -13,6 +13,20 @@
 
 @implementation RemoteClient (Reservations)
 
+
+- (void)deleteReservationWithId:(ReservationsRequest *) request withDelegate:(id <DeleteReservationsById>) delegate {
+
+    [self.httpClient.requestSerializer setValue:[AccountTokenSingleton sharedManager].token forHTTPHeaderField:@"Token-Auth"];
+    NSString *path = [NSString stringWithFormat:@"reservation/reservation/%@",request.reservationId];
+
+    [self deletePath:path params:nil success:^(NSDictionary *response) {
+        [delegate onDeleteReservationByIdSuccess];
+
+    } andDelegate:delegate];
+
+
+}
+
 - (void)getReservationsWithRequest:(ReservationsRequest *) request withDelegate:(id <GetAllReservationsById>) delegate {
     [self.httpClient.requestSerializer setValue:[AccountTokenSingleton sharedManager].token forHTTPHeaderField:@"Token-Auth"];
     NSString *path = [NSString stringWithFormat:@"reservation/hotel/%@",request.reservationId];
@@ -22,7 +36,7 @@
             ReservationResponse *reservationResponse = [[ReservationResponse alloc] init];
             NSArray *hotels = [self parseReservationResponseWithDictionary:response];
 
-            reservationResponse.reservationsArrray = hotels;
+            reservationResponse.reservationsArray = hotels;
             [delegate onGetAllReservationsByIdSuccess:reservationResponse];
         }
         else {
@@ -48,4 +62,6 @@
 
     return [NSArray arrayWithArray:arrayOfReservations];
 }
+
+
 @end
