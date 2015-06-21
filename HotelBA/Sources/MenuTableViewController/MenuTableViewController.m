@@ -15,6 +15,7 @@
 #import "MenuOptionModel.h"
 #import "TrunkViewController.h"
 #import "HotelNavigationController.h"
+#import "AccountTokenSingleton.h"
 
 @interface MenuTableViewController () <MenuOptionsProtocol>
 
@@ -71,10 +72,24 @@
         case MenuTypeAbout:
             [self createAboutScreen];
             break;
+        case MenuTypeLogout:
+            [self logoutUser];
+            break;
         default:
             NSLog(@"Nieznana komenda");
             break;
     }
+
+}
+
+- (void)logoutUser {
+
+    [AccountTokenSingleton clearData];
+    [self createAboutScreen];
+    self.userName = @"Employee";
+    self.isUserLoggedin = false;
+    [self setupTableView];
+    [self.tableView reloadData];
 
 }
 

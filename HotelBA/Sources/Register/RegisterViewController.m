@@ -100,7 +100,7 @@
 
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setLocale:[NSLocale localeWithLocaleIdentifier:@""]];
-    [formatter setDateFormat:@"dd/mm/rrrr"];
+    [formatter setDateFormat:@"DD/MM/rrrr"];
 
     NSDate *date = [formatter dateFromString:self.birthTextField.text];
     NSTimeInterval timeInterval = [date timeIntervalSince1970];
@@ -160,7 +160,7 @@
     [validator validate:self.phoneTextField.text];
 
     if(validator.state == AJWValidatorValidationStateInvalid) {
-        [self showValidationAlertWithTitle:@"Błędny numer telefonu" message:@"Numer telefonu powinien być formatu \"777666555\""];
+        [self showValidationAlertWithTitle:@"Bad phone number" message:@"Phone number should be of format \"777666555\""];
         return NO;
     }
     else
@@ -174,7 +174,7 @@
     [validator validate:self.birthTextField.text];
 
     if(validator.state == AJWValidatorValidationStateInvalid) {
-        [self showValidationAlertWithTitle:@"Błędna data urodzenia" message:@"Data urodzenia powinna być formatu np. \"01/02/1993\""];
+        [self showValidationAlertWithTitle:@"Bad birth date" message:@"Birth date should be of format \"01/02/1993\""];
         return NO;
     }
     else
@@ -188,7 +188,7 @@
     [validator validate:self.postalCodeTextField.text];
 
     if(validator.state == AJWValidatorValidationStateInvalid) {
-        [self showValidationAlertWithTitle:@"Błędny kod pocztowy" message:@"Kod pocztowy powinien być formatu np. \"33-232\""];
+        [self showValidationAlertWithTitle:@"Bad post code" message:@"Post code should be of format \"33-232\""];
         return NO;
     }
     else
@@ -203,7 +203,7 @@
     [validator validate:self.confirmPasswordTextField.text];
 
     if(validator.state == AJWValidatorValidationStateInvalid) {
-        [self showValidationAlertWithTitle:@"Różne hasła" message:@"Powtórzone hasło nie jest takie samo jak hasło"];
+        [self showValidationAlertWithTitle:@"Passwords are not the same" message:@"Repeat password again"];
         return NO;
     }
     else
@@ -217,7 +217,7 @@
     [validator validate: self.passwordTextField.text];
 
     if(validator.state == AJWValidatorValidationStateInvalid) {
-        [self showValidationAlertWithTitle:@"Błędne hasło" message:@"Hasło powinno mieć minimum 8 znaków"];
+        [self showValidationAlertWithTitle:@"Bad password" message:@"Password should haves min 8 characters"];
         return NO;
     }
     else
@@ -231,7 +231,7 @@
     [validator validate:self.emailTextField.text];
 
     if(validator.state == AJWValidatorValidationStateInvalid) {
-        [self showValidationAlertWithTitle:@"Błędny e-mail" message:@"Wpisz poprawny adres e-mail"];
+        [self showValidationAlertWithTitle:@"Invalid e-mail" message:@"Please type correct password"];
         return NO;
     }
     else
@@ -248,10 +248,10 @@
 - (void)onRegistrationSuccess:(NSString *)response {
 
     NSLog(response);
-    UIAlertView *alertView = [UIAlertView alertWithTitle:@"Sukces rejestracji!" message: @"Rejestracja przebiegła pomyślnie."];
+    UIAlertView *alertView = [UIAlertView alertWithTitle:@"Registration success!" message: @"Registration has ended with success"];
     [alertView addButtonWithTitle:@"OK" handler:nil];
     __weak RegisterViewController *weakSelf = self;
-    [alertView addButtonWithTitle:@"Zaloguj się" handler: ^{
+    [alertView addButtonWithTitle:@"Log in" handler: ^{
         [weakSelf showLoginScreen];
     }];
 

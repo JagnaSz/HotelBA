@@ -44,23 +44,25 @@
 
 - (NSArray *)setupMenuItems:(BOOL)isUserRegistered {
 
-    MenuOptionModel *info = [[MenuOptionModel alloc] initWithType:MenuTypeAbout title:@"Informacje" image:@"info"];
+    MenuOptionModel *info = [[MenuOptionModel alloc] initWithType:MenuTypeAbout title:@"About" image:@"info"];
 
     NSMutableArray *menuArray;
 
     if(isUserRegistered) {
         menuArray = [NSMutableArray arrayWithArray:@[
-                [[MenuOptionModel alloc] initWithType:MenuTypeAccount title:@"Profil" image:@"account"],
-                [[MenuOptionModel alloc] initWithType:MenuTypeHotels title:@"Hotele" image:@"reservations"]
+                [[MenuOptionModel alloc] initWithType:MenuTypeAccount title:@"Profile" image:@"account"],
+                [[MenuOptionModel alloc] initWithType:MenuTypeHotels title:@"Hotels" image:@"reservations"],
         ]];
     }
     else
         menuArray = [NSMutableArray arrayWithArray:@[
-                [[MenuOptionModel alloc] initWithType:MenuTypeLogin title:@"Zaloguj się" image:@"login"]
+                [[MenuOptionModel alloc] initWithType:MenuTypeLogin title:@"Log in" image:@"login"]
         ]];
 
     [menuArray insertObject:info atIndex:menuArray.count];
 
+    if(isUserRegistered)
+        [menuArray insertObject:[[MenuOptionModel alloc] initWithType:MenuTypeLogout title:@"Logout" image:@"logout"] atIndex:menuArray.count];
     return menuArray;
 
 

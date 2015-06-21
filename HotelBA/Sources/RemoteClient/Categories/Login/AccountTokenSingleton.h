@@ -10,4 +10,6 @@
 
 @property (nonatomic, copy) NSString *token;
 + (instancetype)sharedManager;
+
++ (void)clearData;
 @end

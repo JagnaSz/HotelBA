@@ -15,11 +15,12 @@ typedef NS_ENUM(NSInteger, MenuType) {
     MenuTypeLogin,
     MenuTypeAccount,
     MenuTypeHotels,
-    MenuTypeAbout
+    MenuTypeAbout,
+    MenuTypeLogout
 };
 
 @protocol UpdateMenuTableViewProtocol
-- (void)updateMenu:(NSString *)userName;;
+- (void)updateMenu:(NSString *)userName;
 @end;
 
 @protocol MenuOptionsProtocol

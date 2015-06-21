@@ -28,4 +28,10 @@
     }
     return self;
 }
+
++(void) clearData {
+    AccountTokenSingleton *appData = [AccountTokenSingleton sharedManager];
+    appData.token = nil;
+}
+
 @end

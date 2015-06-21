@@ -63,7 +63,7 @@
 }
 
 - (void)loginSuccessAlert {
-    UIAlertView *alertView = [UIAlertView alertWithTitle:@"Sukces logowania" message:@"Logowanie zakończyło się sukcesem!"];
+    UIAlertView *alertView = [UIAlertView alertWithTitle:@"Log in success" message:@"Log in was finished with success!"];
     __weak LoginViewController *weakSelf = self;
     [alertView addButtonWithTitle:@"OK" handler:^{
         [weakSelf showCenterScreen];
