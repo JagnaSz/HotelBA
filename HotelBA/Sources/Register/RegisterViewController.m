@@ -273,7 +273,8 @@
 }
 
 - (void)onRemoteClientError:(ErrorResponse *)error {
-    NSLog(@"Error");
+    UIAlertView *alertView = [UIAlertView alertWithTitle:@"Error" message:error.error.userInfo[@"NSLocalizedDescription"]];
+    [alertView addButtonWithTitle:@"OK"];
 
 
 }

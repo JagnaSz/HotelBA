@@ -80,7 +80,7 @@
 }
 
 - (void)onRemoteClientError:(ErrorResponse *)error {
-    UIAlertView *alertView = [UIAlertView alertWithTitle:@"Error" message:error.description];
+    UIAlertView *alertView = [UIAlertView alertWithTitle:@"Error" message:error.error.userInfo[@"NSLocalizedDescription"]];
     [alertView addButtonWithTitle:@"OK"];
 
     [alertView show];

@@ -64,9 +64,16 @@
 
 - (void)onRemoteClientError:(ErrorResponse *)error {
 
-    UIAlertView *alertView = [UIAlertView alertWithTitle:@"No complaint" message:@"Yuuupiii! There is no complaint! :)"];
-    [alertView addButtonWithTitle:@"OK"];
+    UIAlertView *alertView;
+   if([error.error.userInfo[@"NSLocalizedDescription"] isEqual:@"Request failed: not found (404)"]) {
+       alertView = [UIAlertView alertWithTitle:@"No complaint" message:@"Yuuupiii! There is no complaint! :)"];
+       [alertView addButtonWithTitle:@"OK"];
 
+
+   } else {
+       alertView = [UIAlertView alertWithTitle:@"Error" message:error.error.userInfo[@"NSLocalizedDescription"]];
+       [alertView addButtonWithTitle:@"OK"];
+   }
     [alertView show];
 
 }
