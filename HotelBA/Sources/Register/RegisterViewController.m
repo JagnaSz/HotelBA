@@ -71,7 +71,7 @@
         self.addressDTO.postalCode = [self getPostalCode];
         self.addressDTO.city = self.cityTextField.text;
         self.addressDTO.country = self.countryTextField.text;
-
+        self.addressDTO.state = @"malopolska";
 
         self.contactDTO.phone = self.phoneTextField.text;
         self.contactDTO.mail = self.emailTextField.text;
