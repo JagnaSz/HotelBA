@@ -64,7 +64,7 @@
 
 - (void)onRemoteClientError:(ErrorResponse *)error {
 
-    UIAlertView *alertView = [UIAlertView alertWithTitle:@"Error" message:error.description];
+    UIAlertView *alertView = [UIAlertView alertWithTitle:@"No complaint" message:@"Yuuupiii! There is no complaint! :)"];
     [alertView addButtonWithTitle:@"OK"];
 
     [alertView show];

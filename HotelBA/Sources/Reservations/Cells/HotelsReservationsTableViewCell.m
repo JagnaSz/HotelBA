@@ -16,6 +16,7 @@
 #import "NewComplaintViewController.h"
 
 @interface HotelsReservationsTableViewCell()
+@property (weak, nonatomic) IBOutlet UIImageView *isPaidImageView;
 @property (weak, nonatomic) IBOutlet UILabel *reservationId;
 @property (weak, nonatomic) IBOutlet UILabel *reservationDate;
 @property (weak, nonatomic) IBOutlet UILabel *clientHonor;
@@ -61,6 +62,10 @@
     self.roomDesc.text =[NSString stringWithFormat:@"Room description: %@",reservation.roomDTO.roomTypeDTO.roomTypeDescription];
     self.roomOptions.text = [NSString stringWithFormat:@"Room no.: %d, size: %d, floor: %d",reservation.roomDTO.number, reservation.roomDTO.roomSize, reservation.roomDTO.floor];
 
+    if(reservation.paid)
+        self.isPaidImageView.image = [UIImage imageNamed:@"paid"];
+    else
+        self.isPaidImageView.image = [UIImage imageNamed:@"notPaid"];
 }
 
 - (NSString *) createDateFromString:(NSString *) date {
