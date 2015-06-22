@@ -105,6 +105,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "HotelBusinessApp"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

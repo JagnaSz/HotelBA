@@ -71,7 +71,6 @@
         self.addressDTO.postalCode = [self getPostalCode];
         self.addressDTO.city = self.cityTextField.text;
         self.addressDTO.country = self.countryTextField.text;
-        self.addressDTO.state = @"małopolskie";
 
 
         self.contactDTO.phone = self.phoneTextField.text;
@@ -106,7 +105,6 @@
 
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"rrrr-MM-dd"];
-  //  NSTimeInterval timeInterval = [date timeIntervalSince1970];
 
     return [dateFormatter stringFromDate:date];
 
@@ -249,33 +247,20 @@
 }
 
 - (void)onRegistrationSuccess:(NSString *)response {
-
-    NSLog(response);
+    
     UIAlertView *alertView = [UIAlertView alertWithTitle:@"Registration success!" message: @"Registration has ended with success"];
-    [alertView addButtonWithTitle:@"OK" handler:nil];
-//    __weak RegisterViewController *weakSelf = self;
-//    [alertView addButtonWithTitle:@"Log in" handler: ^{
-//        [weakSelf showLoginScreen];
-//    }];
+    __weak RegisterViewController *weakSelf = self;
+    [alertView addButtonWithTitle:@"OK" handler: ^{
+        [weakSelf.navigationController popViewControllerAnimated:YES];
+    }];
 
     [alertView show];
 }
 
 
-- (void)showLoginScreen {
-
-    LoginViewController *logInViewController = [[LoginViewController alloc] init];
-    NSMutableArray *controllers = [NSMutableArray arrayWithArray:[self.navigationController viewControllers]];
-    [controllers removeLastObject];
-    [controllers addObject:logInViewController];
-    [self.navigationController setViewControllers:controllers.copy animated:YES];
-
-}
-
 - (void)onRemoteClientError:(ErrorResponse *)error {
     UIAlertView *alertView = [UIAlertView alertWithTitle:@"Error" message:error.error.userInfo[@"NSLocalizedDescription"]];
     [alertView addButtonWithTitle:@"OK"];
-
 
 }
 

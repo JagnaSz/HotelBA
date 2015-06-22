@@ -59,12 +59,21 @@
     self.ratings.text = [NSString stringWithFormat:@"Average rate :\t"];
     self.street.text = [NSString stringWithFormat:@"Street :\t %@",self.hotelDTO.addressDTO.street];
     self.houseNumber.text = [NSString stringWithFormat:@"House number :\t %@",self.hotelDTO.addressDTO.houseNumber];
-    self.postalCode.text = [NSString stringWithFormat:@"Postal code :\t %@",self.hotelDTO.addressDTO.postalCode];
+    self.postalCode.text = [NSString stringWithFormat:@"Postal code :\t %@",[self getPostalCode:self.hotelDTO.addressDTO.postalCode]];
     self.city.text = [NSString stringWithFormat:@"City :\t %@",self.hotelDTO.addressDTO.city];
     self.state.text = [NSString stringWithFormat:@"State :\t %@",self.hotelDTO.addressDTO.state];
     self.country.text = [NSString stringWithFormat:@"Street :\t %@",self.hotelDTO.addressDTO.country];
     self.phone.text = [NSString stringWithFormat:@"Phone number :\t %@",self.hotelDTO.contactDTO.phone];
     self.email.text = [NSString stringWithFormat:@"Email :\t %@",self.hotelDTO.contactDTO.mail];
+
+}
+
+- (NSString *)getPostalCode:(NSString *) postal {
+
+    NSString *firstPart = [postal substringWithRange:NSMakeRange(0, 2)];
+    NSString *secondPart = [postal substringWithRange:NSMakeRange(2, 3)];
+
+    return [NSString stringWithFormat:@"%@-%@", firstPart, secondPart];
 
 }
 
